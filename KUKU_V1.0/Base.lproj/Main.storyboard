@@ -376,16 +376,16 @@
             </objects>
             <point key="canvasLocation" x="4455" y="508.0985915492958"/>
         </scene>
-        <!--View Controller-->
+        <!--AuftraegeVC-->
         <scene sceneID="9PE-ne-9PY">
             <objects>
-                <viewController id="wOa-vw-I8k" sceneMemberID="viewController">
+                <viewController id="wOa-vw-I8k" customClass="auftraegeVC" customModule="KUKU_V1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KyU-Ue-QEQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LKb-Gx-9s9">
-                                <rect key="frame" x="22" y="94" width="282" height="411"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LKb-Gx-9s9">
+                                <rect key="frame" x="22" y="93" width="282" height="411"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="69" id="gh6-eZ-DtE" customClass="auftragsZelle" customModule="KUKU_V1_0" customModuleProvider="target">
@@ -447,21 +447,24 @@
                         <viewLayoutGuide key="safeArea" id="Pbf-ZV-EpV"/>
                     </view>
                     <navigationItem key="navigationItem" id="d9y-VQ-4xR"/>
+                    <connections>
+                        <outlet property="tableView" destination="LKb-Gx-9s9" id="7NF-B7-ONr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LgM-LY-orB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-926.25" y="1451.4084507042253"/>
         </scene>
-        <!--View Controller-->
+        <!--Auftrag DetailVC-->
         <scene sceneID="wlO-6R-Gxy">
             <objects>
-                <viewController id="eya-lS-w4R" sceneMemberID="viewController">
+                <viewController id="eya-lS-w4R" customClass="auftragDetailVC" customModule="KUKU_V1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CgF-1q-OM4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Auftrag vom " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zak-4G-WTh">
-                                <rect key="frame" x="23" y="83" width="267" height="21"/>
+                                <rect key="frame" x="23" y="83" width="227" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -487,9 +490,16 @@
                                 <state key="normal" title="Änderungen übernehmen"/>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OZG-2t-kr5">
-                                <rect key="frame" x="182" y="133" width="130" height="116"/>
+                                <rect key="frame" x="174" y="133" width="130" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stoff: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjW-4s-93A">
+                                <rect key="frame" x="23" y="317" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -499,6 +509,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="id8-Ms-fPa"/>
                     </view>
+                    <connections>
+                        <outlet property="btnSaveChanges" destination="ejC-Bh-dsv" id="KOp-bE-Uc9"/>
+                        <outlet property="imgContainer" destination="3tE-9p-cNA" id="TZD-oY-zfO"/>
+                        <outlet property="imgState" destination="Gcp-Fx-XlC" id="6K1-6B-N2K"/>
+                        <outlet property="lblDatum" destination="98X-dC-1xQ" id="Jia-J3-LNC"/>
+                        <outlet property="lblStoff" destination="UjW-4s-93A" id="idk-yd-hXX"/>
+                        <outlet property="lblTitel" destination="zak-4G-WTh" id="NfA-5Q-ndC"/>
+                        <outlet property="mapPlace" destination="OZG-2t-kr5" id="Whj-e3-Evf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqi-4C-Zcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

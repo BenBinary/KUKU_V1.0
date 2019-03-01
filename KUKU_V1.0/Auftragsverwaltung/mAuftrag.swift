@@ -2,7 +2,7 @@
 //  mAuftrag.swift
 //  KUKU_V1.0
 //
-//  Created by Benedikt Kurz on 17.01.19.
+//  Created by Benedikt Kurz on 01.03.19.
 //  Copyright © 2019 Benedikt Kurz. All rights reserved.
 //
 
@@ -11,7 +11,8 @@ import Foundation
 
 struct mAuftrag {
     
-    let index : Int!
+    static let index = 0;
+    let auftragsNr : Int
     var kunde : mKunde
     var orderDate : Date
     var deliverDate : Date
@@ -19,6 +20,38 @@ struct mAuftrag {
     var payed : Bool
     var billed : Bool
     var delivered : Bool
+    var price : Double
+    var vat = 0.0
+    var status = 0
+    
+    
+    init(kunde : mKunde, datum : Date, payed : Bool, delivered : Bool) {
+        
+        self.kunde = kunde
+        self.orderDate = datum
+        self.payed = payed
+        self.delivered = delivered
+        
+        
+        deliverDate = Date.init()
+        billed = false
+        pickupDate = Date.init()
+        auftragsNr = mAuftrag.index
+        price = 0.0
+        
+    }
+    
+    
+    mutating func setVat() {
+        
+        vat = price * 0.19
+        
+    }
+    
+    
+    mutating func setBezahlt() {
+        status = 1
+    }
     
     
     

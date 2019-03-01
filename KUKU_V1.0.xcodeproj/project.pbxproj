@@ -18,17 +18,21 @@
 		CD04AA632181B2FD00D019FC /* KUKU_V1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04AA622181B2FD00D019FC /* KUKU_V1_0UITests.swift */; };
 		CD04AA712181C15C00D019FC /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD04AA702181C15C00D019FC /* View.xib */; };
 		CD04AA732181C17400D019FC /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD04AA722181C17400D019FC /* Storyboard.storyboard */; };
-		CD101A2F21DEC262004C81B0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD101A2E21DEC262004C81B0 /* Data.swift */; };
 		CD101A3121DECC5A004C81B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD101A3021DECC5A004C81B0 /* ViewController.swift */; };
 		CD1D795421F052FE00B44646 /* PopupWasteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795321F052FE00B44646 /* PopupWasteViewController.swift */; };
 		CD1D795621F06A7300B44646 /* PopupContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */; };
 		CD1D795821F06B2C00B44646 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795721F06B2C00B44646 /* PopupViewController.swift */; };
 		CD1D795A21F0717700B44646 /* gps_con_stof_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795921F0717700B44646 /* gps_con_stof_VC.swift */; };
-		CD1D795C21F12DBA00B44646 /* mAuftrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795B21F12DBA00B44646 /* mAuftrag.swift */; };
 		CD1D795E21F12E3B00B44646 /* mKunde.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795D21F12E3B00B44646 /* mKunde.swift */; };
 		CD1D796021F12F0700B44646 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795F21F12F0700B44646 /* CustomerViewController.swift */; };
 		CD2D73F222293A7700E014E8 /* auftragsZelle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D73F122293A7700E014E8 /* auftragsZelle.swift */; };
+		CD2D746A22296BFF00E014E8 /* auftragDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D746922296BFF00E014E8 /* auftragDetailVC.swift */; };
+		CD2D746D22296DE500E014E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2D746C22296DE500E014E8 /* MapKit.framework */; };
+		CD2D746F22296FDD00E014E8 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D746E22296FDD00E014E8 /* Container.swift */; };
+		CD2D747222298FB100E014E8 /* auftraegeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D747122298FB100E014E8 /* auftraegeVC.swift */; };
 		CD4453FE2183A839001A2B68 /* kuku_datetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4453FD2183A839001A2B68 /* kuku_datetime.swift */; };
+		CD64748C2229931100A74F09 /* mAuftrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64748B2229931100A74F09 /* mAuftrag.swift */; };
+		CD64748E222994C900A74F09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64748D222994C900A74F09 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,17 +70,21 @@
 		CD04AA642181B2FD00D019FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD04AA702181C15C00D019FC /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		CD04AA722181C17400D019FC /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		CD101A2E21DEC262004C81B0 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		CD101A3021DECC5A004C81B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD1D795321F052FE00B44646 /* PopupWasteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupWasteViewController.swift; sourceTree = "<group>"; };
 		CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupContainerViewController.swift; sourceTree = "<group>"; };
 		CD1D795721F06B2C00B44646 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		CD1D795921F0717700B44646 /* gps_con_stof_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gps_con_stof_VC.swift; sourceTree = "<group>"; };
-		CD1D795B21F12DBA00B44646 /* mAuftrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mAuftrag.swift; sourceTree = "<group>"; };
 		CD1D795D21F12E3B00B44646 /* mKunde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mKunde.swift; sourceTree = "<group>"; };
 		CD1D795F21F12F0700B44646 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		CD2D73F122293A7700E014E8 /* auftragsZelle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftragsZelle.swift; sourceTree = "<group>"; };
+		CD2D746922296BFF00E014E8 /* auftragDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftragDetailVC.swift; sourceTree = "<group>"; };
+		CD2D746C22296DE500E014E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CD2D746E22296FDD00E014E8 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		CD2D747122298FB100E014E8 /* auftraegeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftraegeVC.swift; sourceTree = "<group>"; };
 		CD4453FD2183A839001A2B68 /* kuku_datetime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kuku_datetime.swift; sourceTree = "<group>"; };
+		CD64748B2229931100A74F09 /* mAuftrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mAuftrag.swift; sourceTree = "<group>"; };
+		CD64748D222994C900A74F09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2D746D22296DE500E014E8 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +120,7 @@
 				CD04AA562181B2FD00D019FC /* KUKU_V1.0Tests */,
 				CD04AA612181B2FD00D019FC /* KUKU_V1.0UITests */,
 				CD04AA3C2181B2FC00D019FC /* Products */,
+				CD2D746B22296DE500E014E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,7 +147,6 @@
 				CD04AA442181B2FC00D019FC /* ModelController.swift */,
 				CD04AA462181B2FC00D019FC /* Main.storyboard */,
 				CD1D795F21F12F0700B44646 /* CustomerViewController.swift */,
-				CD1D795D21F12E3B00B44646 /* mKunde.swift */,
 				CD1D795921F0717700B44646 /* gps_con_stof_VC.swift */,
 				CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */,
 				CD1D795321F052FE00B44646 /* PopupWasteViewController.swift */,
@@ -147,7 +156,6 @@
 				CD04AA702181C15C00D019FC /* View.xib */,
 				CD04AA722181C17400D019FC /* Storyboard.storyboard */,
 				CD4453FD2183A839001A2B68 /* kuku_datetime.swift */,
-				CD101A2E21DEC262004C81B0 /* Data.swift */,
 				CD1D795721F06B2C00B44646 /* PopupViewController.swift */,
 			);
 			path = KUKU_V1.0;
@@ -174,8 +182,11 @@
 		CD2D73F0222939D300E014E8 /* Auftragsverwaltung */ = {
 			isa = PBXGroup;
 			children = (
-				CD1D795B21F12DBA00B44646 /* mAuftrag.swift */,
 				CD2D73F122293A7700E014E8 /* auftragsZelle.swift */,
+				CD2D746922296BFF00E014E8 /* auftragDetailVC.swift */,
+				CD2D746E22296FDD00E014E8 /* Container.swift */,
+				CD2D747122298FB100E014E8 /* auftraegeVC.swift */,
+				CD64748B2229931100A74F09 /* mAuftrag.swift */,
 			);
 			path = Auftragsverwaltung;
 			sourceTree = "<group>";
@@ -183,6 +194,8 @@
 		CD2D73F322293AA300E014E8 /* Benutzerverwaltung */ = {
 			isa = PBXGroup;
 			children = (
+				CD1D795D21F12E3B00B44646 /* mKunde.swift */,
+				CD64748D222994C900A74F09 /* User.swift */,
 			);
 			path = Benutzerverwaltung;
 			sourceTree = "<group>";
@@ -192,6 +205,14 @@
 			children = (
 			);
 			path = Bezahlung;
+			sourceTree = "<group>";
+		};
+		CD2D746B22296DE500E014E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD2D746C22296DE500E014E8 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +283,14 @@
 				TargetAttributes = {
 					CD04AA3A2181B2FC00D019FC = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CD04AA522181B2FD00D019FC = {
 						CreatedOnToolsVersion = 10.0;
@@ -328,20 +357,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD1D795421F052FE00B44646 /* PopupWasteViewController.swift in Sources */,
+				CD2D747222298FB100E014E8 /* auftraegeVC.swift in Sources */,
 				CD1D795621F06A7300B44646 /* PopupContainerViewController.swift in Sources */,
 				CD04AA412181B2FC00D019FC /* RootViewController.swift in Sources */,
 				CD1D795E21F12E3B00B44646 /* mKunde.swift in Sources */,
-				CD101A2F21DEC262004C81B0 /* Data.swift in Sources */,
 				CD04AA452181B2FC00D019FC /* ModelController.swift in Sources */,
+				CD2D746A22296BFF00E014E8 /* auftragDetailVC.swift in Sources */,
 				CD2D73F222293A7700E014E8 /* auftragsZelle.swift in Sources */,
 				CD1D796021F12F0700B44646 /* CustomerViewController.swift in Sources */,
 				CD1D795821F06B2C00B44646 /* PopupViewController.swift in Sources */,
 				CD1D795A21F0717700B44646 /* gps_con_stof_VC.swift in Sources */,
 				CD4453FE2183A839001A2B68 /* kuku_datetime.swift in Sources */,
-				CD1D795C21F12DBA00B44646 /* mAuftrag.swift in Sources */,
 				CD101A3121DECC5A004C81B0 /* ViewController.swift in Sources */,
 				CD04AA432181B2FC00D019FC /* DataViewController.swift in Sources */,
 				CD04AA3F2181B2FC00D019FC /* AppDelegate.swift in Sources */,
+				CD2D746F22296FDD00E014E8 /* Container.swift in Sources */,
+				CD64748C2229931100A74F09 /* mAuftrag.swift in Sources */,
+				CD64748E222994C900A74F09 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
