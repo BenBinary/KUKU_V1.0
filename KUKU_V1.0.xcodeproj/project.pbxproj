@@ -137,7 +137,6 @@
 				CD04AA442181B2FC00D019FC /* ModelController.swift */,
 				CD04AA462181B2FC00D019FC /* Main.storyboard */,
 				CD1D795F21F12F0700B44646 /* CustomerViewController.swift */,
-				CD1D795B21F12DBA00B44646 /* mAuftrag.swift */,
 				CD1D795D21F12E3B00B44646 /* mKunde.swift */,
 				CD1D795921F0717700B44646 /* gps_con_stof_VC.swift */,
 				CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */,
@@ -175,6 +174,7 @@
 		CD2D73F0222939D300E014E8 /* Auftragsverwaltung */ = {
 			isa = PBXGroup;
 			children = (
+				CD1D795B21F12DBA00B44646 /* mAuftrag.swift */,
 				CD2D73F122293A7700E014E8 /* auftragsZelle.swift */,
 			);
 			path = Auftragsverwaltung;
