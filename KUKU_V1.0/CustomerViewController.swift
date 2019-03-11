@@ -12,6 +12,7 @@ class CustomerViewController: UIViewController {
 
     @IBOutlet weak var txtVorname: UITextField!
     @IBOutlet weak var txtNachname: UITextField!
+    @IBOutlet weak var date: UIDatePicker!
     
     
     override func viewDidLoad() {
@@ -21,8 +22,8 @@ class CustomerViewController: UIViewController {
         let df = DateFormatter()
         df.dateFormat = "dd-mm-yyyy"
         
-        
-        var kunde =  mKunde.init(vorname: "Max", nachname: "Mustermann")
+       
+        var kunde =  Kunde.init(vorname: "Max", nachname: "Mustermann")
         
         txtVorname.text = kunde.getVorname()
         txtNachname.text = kunde.getNachname()

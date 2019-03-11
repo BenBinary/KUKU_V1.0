@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import Foundation
 
 class auftraegeVC: UIViewController {
+    
+ 
+    
+    @IBOutlet weak var table: UITableView!
+
+    var mydata : [Auftrag] = [Auftrag(kunde: Kunde(vorname: "a", nachname: "b"), datum: Date(), payed: false, delivered: false), Auftrag(kunde: Kunde(vorname: "c", nachname: "d"), datum: Date(), payed: false, delivered: false)]
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -17,18 +24,45 @@ class auftraegeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+
+        
     }
     
+ 
+    
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+
+extension ViewController: UITableViewDataSource {
+    
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+        
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    
+        // Prototypzelle erzeugen und als MyCell-Objekt verwenden
+        let cell = tableView.dequeueReusableCell(withIdentifier: "auftragsZelle", for: indexPath) as! auftragsZelle
+        
+        
+        let row = (indexPath as NSIndexPath).row
+        
+        
+        
+        
+        
+        return cell
+    
+    }
+    
+    
+    
+    
+    
 }

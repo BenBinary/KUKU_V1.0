@@ -9,11 +9,11 @@
 import Foundation
 
 
-struct mAuftrag {
+struct Auftrag {
     
     static let index = 0;
     let auftragsNr : Int
-    var kunde : mKunde
+    var kunde : Kunde?
     var orderDate : Date
     var deliverDate : Date
     var pickupDate : Date
@@ -25,7 +25,7 @@ struct mAuftrag {
     var status = 0
     
     
-    init(kunde : mKunde, datum : Date, payed : Bool, delivered : Bool) {
+    init(kunde : Kunde, datum : Date, payed : Bool, delivered : Bool) {
         
         self.kunde = kunde
         self.orderDate = datum
@@ -36,7 +36,7 @@ struct mAuftrag {
         deliverDate = Date.init()
         billed = false
         pickupDate = Date.init()
-        auftragsNr = mAuftrag.index
+        auftragsNr = Auftrag.index
         price = 0.0
         
     }

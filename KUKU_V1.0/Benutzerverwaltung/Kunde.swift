@@ -9,10 +9,18 @@
 import Foundation
 
 
-struct mKunde {
+struct Kunde {
     var vorname : String
     var nachname : String
    // var geburtstadatum : Date
+    
+    
+    init (vorname : String, nachname : String) {
+        
+        self.vorname = vorname
+        self.nachname = nachname
+        
+    }
     
     
     

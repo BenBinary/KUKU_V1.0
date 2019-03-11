@@ -23,7 +23,7 @@
 		CD1D795621F06A7300B44646 /* PopupContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */; };
 		CD1D795821F06B2C00B44646 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795721F06B2C00B44646 /* PopupViewController.swift */; };
 		CD1D795A21F0717700B44646 /* gps_con_stof_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795921F0717700B44646 /* gps_con_stof_VC.swift */; };
-		CD1D795E21F12E3B00B44646 /* mKunde.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795D21F12E3B00B44646 /* mKunde.swift */; };
+		CD1D795E21F12E3B00B44646 /* Kunde.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795D21F12E3B00B44646 /* Kunde.swift */; };
 		CD1D796021F12F0700B44646 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795F21F12F0700B44646 /* CustomerViewController.swift */; };
 		CD2D73F222293A7700E014E8 /* auftragsZelle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D73F122293A7700E014E8 /* auftragsZelle.swift */; };
 		CD2D746A22296BFF00E014E8 /* auftragDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D746922296BFF00E014E8 /* auftragDetailVC.swift */; };
@@ -31,8 +31,8 @@
 		CD2D746F22296FDD00E014E8 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D746E22296FDD00E014E8 /* Container.swift */; };
 		CD2D747222298FB100E014E8 /* auftraegeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D747122298FB100E014E8 /* auftraegeVC.swift */; };
 		CD4453FE2183A839001A2B68 /* kuku_datetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4453FD2183A839001A2B68 /* kuku_datetime.swift */; };
-		CD64748C2229931100A74F09 /* mAuftrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64748B2229931100A74F09 /* mAuftrag.swift */; };
 		CD64748E222994C900A74F09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64748D222994C900A74F09 /* User.swift */; };
+		CD6474902229991C00A74F09 /* Auftrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64748F2229991C00A74F09 /* Auftrag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +75,7 @@
 		CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupContainerViewController.swift; sourceTree = "<group>"; };
 		CD1D795721F06B2C00B44646 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		CD1D795921F0717700B44646 /* gps_con_stof_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gps_con_stof_VC.swift; sourceTree = "<group>"; };
-		CD1D795D21F12E3B00B44646 /* mKunde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mKunde.swift; sourceTree = "<group>"; };
+		CD1D795D21F12E3B00B44646 /* Kunde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kunde.swift; sourceTree = "<group>"; };
 		CD1D795F21F12F0700B44646 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		CD2D73F122293A7700E014E8 /* auftragsZelle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftragsZelle.swift; sourceTree = "<group>"; };
 		CD2D746922296BFF00E014E8 /* auftragDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftragDetailVC.swift; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 		CD2D746E22296FDD00E014E8 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		CD2D747122298FB100E014E8 /* auftraegeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftraegeVC.swift; sourceTree = "<group>"; };
 		CD4453FD2183A839001A2B68 /* kuku_datetime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kuku_datetime.swift; sourceTree = "<group>"; };
-		CD64748B2229931100A74F09 /* mAuftrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mAuftrag.swift; sourceTree = "<group>"; };
 		CD64748D222994C900A74F09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CD64748F2229991C00A74F09 /* Auftrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auftrag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +137,9 @@
 		CD04AA3D2181B2FC00D019FC /* KUKU_V1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */,
+				CD1D795321F052FE00B44646 /* PopupWasteViewController.swift */,
+				CD6474912229993200A74F09 /* AR */,
 				CD2D73F422293AAF00E014E8 /* Bezahlung */,
 				CD2D73F322293AA300E014E8 /* Benutzerverwaltung */,
 				CD2D73F0222939D300E014E8 /* Auftragsverwaltung */,
@@ -148,8 +151,6 @@
 				CD04AA462181B2FC00D019FC /* Main.storyboard */,
 				CD1D795F21F12F0700B44646 /* CustomerViewController.swift */,
 				CD1D795921F0717700B44646 /* gps_con_stof_VC.swift */,
-				CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */,
-				CD1D795321F052FE00B44646 /* PopupWasteViewController.swift */,
 				CD04AA492181B2FD00D019FC /* Assets.xcassets */,
 				CD04AA4B2181B2FD00D019FC /* LaunchScreen.storyboard */,
 				CD04AA4E2181B2FD00D019FC /* Info.plist */,
@@ -186,7 +187,7 @@
 				CD2D746922296BFF00E014E8 /* auftragDetailVC.swift */,
 				CD2D746E22296FDD00E014E8 /* Container.swift */,
 				CD2D747122298FB100E014E8 /* auftraegeVC.swift */,
-				CD64748B2229931100A74F09 /* mAuftrag.swift */,
+				CD64748F2229991C00A74F09 /* Auftrag.swift */,
 			);
 			path = Auftragsverwaltung;
 			sourceTree = "<group>";
@@ -194,7 +195,7 @@
 		CD2D73F322293AA300E014E8 /* Benutzerverwaltung */ = {
 			isa = PBXGroup;
 			children = (
-				CD1D795D21F12E3B00B44646 /* mKunde.swift */,
+				CD1D795D21F12E3B00B44646 /* Kunde.swift */,
 				CD64748D222994C900A74F09 /* User.swift */,
 			);
 			path = Benutzerverwaltung;
@@ -213,6 +214,13 @@
 				CD2D746C22296DE500E014E8 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD6474912229993200A74F09 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,7 +368,7 @@
 				CD2D747222298FB100E014E8 /* auftraegeVC.swift in Sources */,
 				CD1D795621F06A7300B44646 /* PopupContainerViewController.swift in Sources */,
 				CD04AA412181B2FC00D019FC /* RootViewController.swift in Sources */,
-				CD1D795E21F12E3B00B44646 /* mKunde.swift in Sources */,
+				CD1D795E21F12E3B00B44646 /* Kunde.swift in Sources */,
 				CD04AA452181B2FC00D019FC /* ModelController.swift in Sources */,
 				CD2D746A22296BFF00E014E8 /* auftragDetailVC.swift in Sources */,
 				CD2D73F222293A7700E014E8 /* auftragsZelle.swift in Sources */,
@@ -372,7 +380,7 @@
 				CD04AA432181B2FC00D019FC /* DataViewController.swift in Sources */,
 				CD04AA3F2181B2FC00D019FC /* AppDelegate.swift in Sources */,
 				CD2D746F22296FDD00E014E8 /* Container.swift in Sources */,
-				CD64748C2229931100A74F09 /* mAuftrag.swift in Sources */,
+				CD6474902229991C00A74F09 /* Auftrag.swift in Sources */,
 				CD64748E222994C900A74F09 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
