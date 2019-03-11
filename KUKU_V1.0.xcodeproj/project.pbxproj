@@ -32,13 +32,13 @@
 		CD2D747222298FB100E014E8 /* auftraegeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D747122298FB100E014E8 /* auftraegeVC.swift */; };
 		CD2DF07222366C0100C4FBC6 /* VC_PayPal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DF07122366C0100C4FBC6 /* VC_PayPal.swift */; };
 		CD2DF07422366C2F00C4FBC6 /* VC_Bezahlung.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DF07322366C2F00C4FBC6 /* VC_Bezahlung.swift */; };
-		CD4453FE2183A839001A2B68 /* kuku_datetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4453FD2183A839001A2B68 /* kuku_datetime.swift */; };
 		CD64748E222994C900A74F09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64748D222994C900A74F09 /* User.swift */; };
 		CD6474902229991C00A74F09 /* Auftrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64748F2229991C00A74F09 /* Auftrag.swift */; };
 		CDC8C94F223678CF00F67381 /* VC_Lastschrift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C94E223678CF00F67381 /* VC_Lastschrift.swift */; };
 		CDC8C95122368A9F00F67381 /* VC_Kreditkarte.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */; };
 		CDC8C9532236910900F67381 /* VC_VISA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C9522236910900F67381 /* VC_VISA.swift */; };
 		CDC8C9942236A82F00F67381 /* pvJahr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C9932236A82F00F67381 /* pvJahr.swift */; };
+		CDC8C9972236BAE000F67381 /* VC_DatumUndAuftragstyp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C9962236BAE000F67381 /* VC_DatumUndAuftragstyp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,13 +90,13 @@
 		CD2D747122298FB100E014E8 /* auftraegeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftraegeVC.swift; sourceTree = "<group>"; };
 		CD2DF07122366C0100C4FBC6 /* VC_PayPal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_PayPal.swift; sourceTree = "<group>"; };
 		CD2DF07322366C2F00C4FBC6 /* VC_Bezahlung.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Bezahlung.swift; sourceTree = "<group>"; };
-		CD4453FD2183A839001A2B68 /* kuku_datetime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kuku_datetime.swift; sourceTree = "<group>"; };
 		CD64748D222994C900A74F09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CD64748F2229991C00A74F09 /* Auftrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auftrag.swift; sourceTree = "<group>"; };
 		CDC8C94E223678CF00F67381 /* VC_Lastschrift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Lastschrift.swift; sourceTree = "<group>"; };
 		CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Kreditkarte.swift; sourceTree = "<group>"; };
 		CDC8C9522236910900F67381 /* VC_VISA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_VISA.swift; sourceTree = "<group>"; };
 		CDC8C9932236A82F00F67381 /* pvJahr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pvJahr.swift; sourceTree = "<group>"; };
+		CDC8C9962236BAE000F67381 /* VC_DatumUndAuftragstyp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_DatumUndAuftragstyp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +149,7 @@
 		CD04AA3D2181B2FC00D019FC /* KUKU_V1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				CDC8C9952236BAA300F67381 /* Auftragserstellung */,
 				CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */,
 				CD1D795321F052FE00B44646 /* PopupWasteViewController.swift */,
 				CD6474912229993200A74F09 /* AR */,
@@ -168,7 +169,6 @@
 				CD04AA4E2181B2FD00D019FC /* Info.plist */,
 				CD04AA702181C15C00D019FC /* View.xib */,
 				CD04AA722181C17400D019FC /* Storyboard.storyboard */,
-				CD4453FD2183A839001A2B68 /* kuku_datetime.swift */,
 				CD1D795721F06B2C00B44646 /* PopupViewController.swift */,
 			);
 			path = KUKU_V1.0;
@@ -247,6 +247,14 @@
 				CDC8C9932236A82F00F67381 /* pvJahr.swift */,
 			);
 			path = Kreditkarten_Gueltigkeit;
+			sourceTree = "<group>";
+		};
+		CDC8C9952236BAA300F67381 /* Auftragserstellung */ = {
+			isa = PBXGroup;
+			children = (
+				CDC8C9962236BAE000F67381 /* VC_DatumUndAuftragstyp.swift */,
+			);
+			path = Auftragserstellung;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,12 +409,12 @@
 				CD2D73F222293A7700E014E8 /* auftragsZelle.swift in Sources */,
 				CDC8C94F223678CF00F67381 /* VC_Lastschrift.swift in Sources */,
 				CDC8C9942236A82F00F67381 /* pvJahr.swift in Sources */,
+				CDC8C9972236BAE000F67381 /* VC_DatumUndAuftragstyp.swift in Sources */,
 				CD2DF07222366C0100C4FBC6 /* VC_PayPal.swift in Sources */,
 				CDC8C9532236910900F67381 /* VC_VISA.swift in Sources */,
 				CD1D796021F12F0700B44646 /* CustomerViewController.swift in Sources */,
 				CD1D795821F06B2C00B44646 /* PopupViewController.swift in Sources */,
 				CD1D795A21F0717700B44646 /* gps_con_stof_VC.swift in Sources */,
-				CD4453FE2183A839001A2B68 /* kuku_datetime.swift in Sources */,
 				CD101A3121DECC5A004C81B0 /* ViewController.swift in Sources */,
 				CD04AA432181B2FC00D019FC /* DataViewController.swift in Sources */,
 				CD04AA3F2181B2FC00D019FC /* AppDelegate.swift in Sources */,

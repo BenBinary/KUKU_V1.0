@@ -1,27 +1,35 @@
 //
-//  kuku_datetime.swift
+//  VC_DatumUndAuftragstyp.swift
 //  KUKU_V1.0
 //
-//  Created by Benedikt Kurz on 26.10.18.
-//  Copyright © 2018 Benedikt Kurz. All rights reserved.
+//  Created by Benedikt Kurz on 11.03.19.
+//  Copyright © 2019 Benedikt Kurz. All rights reserved.
 //
 
 import UIKit
 
-class kuku_datetime: UIViewController {
+class VC_DatumUndAuftragstyp: UIViewController {
 
+    @IBOutlet weak var sg_Auftragstyp: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        delivery_date.setDate(Date(), animated: false)
-        
-        
-        
         // Do any additional setup after loading the view.
+        
+        
+    }
+    
+    
+    @IBAction func sgAuftragstypChanged(_ sender: UISegmentedControl) {
+        
+        
+        if sg_Auftragstyp.
+        
+        
     }
     
 
-    
     /*
     // MARK: - Navigation
 
