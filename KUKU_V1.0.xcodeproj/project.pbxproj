@@ -30,9 +30,13 @@
 		CD2D746D22296DE500E014E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2D746C22296DE500E014E8 /* MapKit.framework */; };
 		CD2D746F22296FDD00E014E8 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D746E22296FDD00E014E8 /* Container.swift */; };
 		CD2D747222298FB100E014E8 /* auftraegeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D747122298FB100E014E8 /* auftraegeVC.swift */; };
+		CD2DF07222366C0100C4FBC6 /* VC_PayPal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DF07122366C0100C4FBC6 /* VC_PayPal.swift */; };
+		CD2DF07422366C2F00C4FBC6 /* VC_Bezahlung.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DF07322366C2F00C4FBC6 /* VC_Bezahlung.swift */; };
 		CD4453FE2183A839001A2B68 /* kuku_datetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4453FD2183A839001A2B68 /* kuku_datetime.swift */; };
 		CD64748E222994C900A74F09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64748D222994C900A74F09 /* User.swift */; };
 		CD6474902229991C00A74F09 /* Auftrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64748F2229991C00A74F09 /* Auftrag.swift */; };
+		CDC8C94F223678CF00F67381 /* VC_Lastschrift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C94E223678CF00F67381 /* VC_Lastschrift.swift */; };
+		CDC8C95122368A9F00F67381 /* VC_Kreditkarte.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,9 +86,13 @@
 		CD2D746C22296DE500E014E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CD2D746E22296FDD00E014E8 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		CD2D747122298FB100E014E8 /* auftraegeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftraegeVC.swift; sourceTree = "<group>"; };
+		CD2DF07122366C0100C4FBC6 /* VC_PayPal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_PayPal.swift; sourceTree = "<group>"; };
+		CD2DF07322366C2F00C4FBC6 /* VC_Bezahlung.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Bezahlung.swift; sourceTree = "<group>"; };
 		CD4453FD2183A839001A2B68 /* kuku_datetime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kuku_datetime.swift; sourceTree = "<group>"; };
 		CD64748D222994C900A74F09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CD64748F2229991C00A74F09 /* Auftrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auftrag.swift; sourceTree = "<group>"; };
+		CDC8C94E223678CF00F67381 /* VC_Lastschrift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Lastschrift.swift; sourceTree = "<group>"; };
+		CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Kreditkarte.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +212,10 @@
 		CD2D73F422293AAF00E014E8 /* Bezahlung */ = {
 			isa = PBXGroup;
 			children = (
+				CD2DF07122366C0100C4FBC6 /* VC_PayPal.swift */,
+				CD2DF07322366C2F00C4FBC6 /* VC_Bezahlung.swift */,
+				CDC8C94E223678CF00F67381 /* VC_Lastschrift.swift */,
+				CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */,
 			);
 			path = Bezahlung;
 			sourceTree = "<group>";
@@ -369,9 +381,12 @@
 				CD1D795621F06A7300B44646 /* PopupContainerViewController.swift in Sources */,
 				CD04AA412181B2FC00D019FC /* RootViewController.swift in Sources */,
 				CD1D795E21F12E3B00B44646 /* Kunde.swift in Sources */,
+				CD2DF07422366C2F00C4FBC6 /* VC_Bezahlung.swift in Sources */,
 				CD04AA452181B2FC00D019FC /* ModelController.swift in Sources */,
 				CD2D746A22296BFF00E014E8 /* auftragDetailVC.swift in Sources */,
 				CD2D73F222293A7700E014E8 /* auftragsZelle.swift in Sources */,
+				CDC8C94F223678CF00F67381 /* VC_Lastschrift.swift in Sources */,
+				CD2DF07222366C0100C4FBC6 /* VC_PayPal.swift in Sources */,
 				CD1D796021F12F0700B44646 /* CustomerViewController.swift in Sources */,
 				CD1D795821F06B2C00B44646 /* PopupViewController.swift in Sources */,
 				CD1D795A21F0717700B44646 /* gps_con_stof_VC.swift in Sources */,
@@ -380,6 +395,7 @@
 				CD04AA432181B2FC00D019FC /* DataViewController.swift in Sources */,
 				CD04AA3F2181B2FC00D019FC /* AppDelegate.swift in Sources */,
 				CD2D746F22296FDD00E014E8 /* Container.swift in Sources */,
+				CDC8C95122368A9F00F67381 /* VC_Kreditkarte.swift in Sources */,
 				CD6474902229991C00A74F09 /* Auftrag.swift in Sources */,
 				CD64748E222994C900A74F09 /* User.swift in Sources */,
 			);
