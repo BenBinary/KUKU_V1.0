@@ -11,21 +11,36 @@ import Foundation
 
 struct Auftrag {
     
-    static let index = 0;
+    static var index = 0;
     let auftragsNr : Int
     var kunde : Kunde?
-    var orderDate : Date
-    var deliverDate : Date
-    var pickupDate : Date
-    var payed : Bool
-    var billed : Bool
-    var delivered : Bool
-    var price : Double
-    var vat = 0.0
-    var status = 0
+    lazy var orderDate : Date = Date()
+    lazy var deliverDate : Date = Date()
+    lazy var pickupDate : Date = Date()
+    lazy var payed: Bool  = false
+    lazy var billed: Bool  = false
+    lazy var delivered: Bool  = false
+    lazy var price: Double = 0.0
+    lazy var vat = 0.0
+    lazy var status = 0
+    lazy var container = Container()
+    lazy var stoff = Stoffe.Sperrmuell
     
+    
+    init() {
+       
+        // Auftragsnummer hinzufügen
+        Auftrag.index = Auftrag.index + 1
+        auftragsNr = Auftrag.index
+        
+        kunde = Kunde()
+    }
     
     init(kunde : Kunde, datum : Date, payed : Bool, delivered : Bool) {
+        
+        // Auftragsnummer hinzufügen
+        Auftrag.index = Auftrag.index + 1
+        auftragsNr = Auftrag.index
         
         self.kunde = kunde
         self.orderDate = datum
@@ -36,8 +51,15 @@ struct Auftrag {
         deliverDate = Date.init()
         billed = false
         pickupDate = Date.init()
-        auftragsNr = Auftrag.index
+        
         price = 0.0
+        
+    }
+    
+    
+    func setContainer(for : Container) {
+        
+    //    self.container = Container.self
         
     }
     

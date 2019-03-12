@@ -15,6 +15,12 @@ struct Kunde {
    // var geburtstadatum : Date
     
     
+    init() {
+        self.vorname = ""
+        self.nachname = ""
+    }
+    
+    
     init (vorname : String, nachname : String) {
         
         self.vorname = vorname

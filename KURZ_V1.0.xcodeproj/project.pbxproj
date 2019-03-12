@@ -18,11 +18,15 @@
 		CD04AA632181B2FD00D019FC /* KUKU_V1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04AA622181B2FD00D019FC /* KUKU_V1_0UITests.swift */; };
 		CD04AA712181C15C00D019FC /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD04AA702181C15C00D019FC /* View.xib */; };
 		CD04AA732181C17400D019FC /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD04AA722181C17400D019FC /* Storyboard.storyboard */; };
+		CD0CCD222237EBE3004BD246 /* VC_AuftragNeu_02_Stand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CCD212237EBE3004BD246 /* VC_AuftragNeu_02_Stand.swift */; };
+		CD0CCD242237F130004BD246 /* Stoffe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CCD232237F130004BD246 /* Stoffe.swift */; };
+		CD0CCD262237F6BA004BD246 /* Stoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CCD252237F6BA004BD246 /* Stoff.swift */; };
+		CD0CCD282237F6D9004BD246 /* About in Resources */ = {isa = PBXBuildFile; fileRef = CD0CCD272237F6D9004BD246 /* About */; };
 		CD101A3121DECC5A004C81B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD101A3021DECC5A004C81B0 /* ViewController.swift */; };
 		CD1D795421F052FE00B44646 /* PopupWasteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795321F052FE00B44646 /* PopupWasteViewController.swift */; };
 		CD1D795621F06A7300B44646 /* PopupContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */; };
 		CD1D795821F06B2C00B44646 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795721F06B2C00B44646 /* PopupViewController.swift */; };
-		CD1D795A21F0717700B44646 /* gps_con_stof_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795921F0717700B44646 /* gps_con_stof_VC.swift */; };
+		CD1D795A21F0717700B44646 /* VC_AuftragNeu_01_Cont-Stoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795921F0717700B44646 /* VC_AuftragNeu_01_Cont-Stoff.swift */; };
 		CD1D795E21F12E3B00B44646 /* Kunde.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795D21F12E3B00B44646 /* Kunde.swift */; };
 		CD1D796021F12F0700B44646 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795F21F12F0700B44646 /* CustomerViewController.swift */; };
 		CD2D73F222293A7700E014E8 /* auftragsZelle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D73F122293A7700E014E8 /* auftragsZelle.swift */; };
@@ -76,11 +80,15 @@
 		CD04AA642181B2FD00D019FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD04AA702181C15C00D019FC /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		CD04AA722181C17400D019FC /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		CD0CCD212237EBE3004BD246 /* VC_AuftragNeu_02_Stand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_AuftragNeu_02_Stand.swift; sourceTree = "<group>"; };
+		CD0CCD232237F130004BD246 /* Stoffe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stoffe.swift; sourceTree = "<group>"; };
+		CD0CCD252237F6BA004BD246 /* Stoff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stoff.swift; sourceTree = "<group>"; };
+		CD0CCD272237F6D9004BD246 /* About */ = {isa = PBXFileReference; lastKnownFileType = text; path = About; sourceTree = "<group>"; };
 		CD101A3021DECC5A004C81B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD1D795321F052FE00B44646 /* PopupWasteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupWasteViewController.swift; sourceTree = "<group>"; };
 		CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupContainerViewController.swift; sourceTree = "<group>"; };
 		CD1D795721F06B2C00B44646 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
-		CD1D795921F0717700B44646 /* gps_con_stof_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gps_con_stof_VC.swift; sourceTree = "<group>"; };
+		CD1D795921F0717700B44646 /* VC_AuftragNeu_01_Cont-Stoff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC_AuftragNeu_01_Cont-Stoff.swift"; sourceTree = "<group>"; };
 		CD1D795D21F12E3B00B44646 /* Kunde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kunde.swift; sourceTree = "<group>"; };
 		CD1D795F21F12F0700B44646 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		CD2D73F122293A7700E014E8 /* auftragsZelle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftragsZelle.swift; sourceTree = "<group>"; };
@@ -149,9 +157,9 @@
 		CD04AA3D2181B2FC00D019FC /* KURZ_V1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				CD0CCD272237F6D9004BD246 /* About */,
+				CD0CCD202237E8AF004BD246 /* Global */,
 				CDC8C9952236BAA300F67381 /* Auftragserstellung */,
-				CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */,
-				CD1D795321F052FE00B44646 /* PopupWasteViewController.swift */,
 				CD6474912229993200A74F09 /* AR */,
 				CD2D73F422293AAF00E014E8 /* Bezahlung */,
 				CD2D73F322293AA300E014E8 /* Benutzerverwaltung */,
@@ -163,7 +171,6 @@
 				CD04AA442181B2FC00D019FC /* ModelController.swift */,
 				CD04AA462181B2FC00D019FC /* Main.storyboard */,
 				CD1D795F21F12F0700B44646 /* CustomerViewController.swift */,
-				CD1D795921F0717700B44646 /* gps_con_stof_VC.swift */,
 				CD04AA492181B2FD00D019FC /* Assets.xcassets */,
 				CD04AA4B2181B2FD00D019FC /* LaunchScreen.storyboard */,
 				CD04AA4E2181B2FD00D019FC /* Info.plist */,
@@ -192,14 +199,23 @@
 			path = KURZ_V1.0UITests;
 			sourceTree = "<group>";
 		};
+		CD0CCD202237E8AF004BD246 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				CD2D746E22296FDD00E014E8 /* Container.swift */,
+				CD64748F2229991C00A74F09 /* Auftrag.swift */,
+				CD0CCD232237F130004BD246 /* Stoffe.swift */,
+				CD0CCD252237F6BA004BD246 /* Stoff.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
 		CD2D73F0222939D300E014E8 /* Auftragsverwaltung */ = {
 			isa = PBXGroup;
 			children = (
 				CD2D73F122293A7700E014E8 /* auftragsZelle.swift */,
 				CD2D746922296BFF00E014E8 /* auftragDetailVC.swift */,
-				CD2D746E22296FDD00E014E8 /* Container.swift */,
 				CD2D747122298FB100E014E8 /* auftraegeVC.swift */,
-				CD64748F2229991C00A74F09 /* Auftrag.swift */,
 			);
 			path = Auftragsverwaltung;
 			sourceTree = "<group>";
@@ -252,7 +268,11 @@
 		CDC8C9952236BAA300F67381 /* Auftragserstellung */ = {
 			isa = PBXGroup;
 			children = (
+				CD1D795321F052FE00B44646 /* PopupWasteViewController.swift */,
+				CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */,
+				CD1D795921F0717700B44646 /* VC_AuftragNeu_01_Cont-Stoff.swift */,
 				CDC8C9962236BAE000F67381 /* VC_DatumUndAuftragstyp.swift */,
+				CD0CCD212237EBE3004BD246 /* VC_AuftragNeu_02_Stand.swift */,
 			);
 			path = Auftragserstellung;
 			sourceTree = "<group>";
@@ -369,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0CCD282237F6D9004BD246 /* About in Resources */,
 				CD04AA712181C15C00D019FC /* View.xib in Resources */,
 				CD04AA4D2181B2FD00D019FC /* LaunchScreen.storyboard in Resources */,
 				CD04AA4A2181B2FD00D019FC /* Assets.xcassets in Resources */,
@@ -403,6 +424,7 @@
 				CD1D795621F06A7300B44646 /* PopupContainerViewController.swift in Sources */,
 				CD04AA412181B2FC00D019FC /* RootViewController.swift in Sources */,
 				CD1D795E21F12E3B00B44646 /* Kunde.swift in Sources */,
+				CD0CCD222237EBE3004BD246 /* VC_AuftragNeu_02_Stand.swift in Sources */,
 				CD2DF07422366C2F00C4FBC6 /* VC_Bezahlung.swift in Sources */,
 				CD04AA452181B2FC00D019FC /* ModelController.swift in Sources */,
 				CD2D746A22296BFF00E014E8 /* auftragDetailVC.swift in Sources */,
@@ -411,16 +433,18 @@
 				CDC8C9942236A82F00F67381 /* pvJahr.swift in Sources */,
 				CDC8C9972236BAE000F67381 /* VC_DatumUndAuftragstyp.swift in Sources */,
 				CD2DF07222366C0100C4FBC6 /* VC_PayPal.swift in Sources */,
+				CD0CCD242237F130004BD246 /* Stoffe.swift in Sources */,
 				CDC8C9532236910900F67381 /* VC_VISA.swift in Sources */,
 				CD1D796021F12F0700B44646 /* CustomerViewController.swift in Sources */,
 				CD1D795821F06B2C00B44646 /* PopupViewController.swift in Sources */,
-				CD1D795A21F0717700B44646 /* gps_con_stof_VC.swift in Sources */,
+				CD1D795A21F0717700B44646 /* VC_AuftragNeu_01_Cont-Stoff.swift in Sources */,
 				CD101A3121DECC5A004C81B0 /* ViewController.swift in Sources */,
 				CD04AA432181B2FC00D019FC /* DataViewController.swift in Sources */,
 				CD04AA3F2181B2FC00D019FC /* AppDelegate.swift in Sources */,
 				CD2D746F22296FDD00E014E8 /* Container.swift in Sources */,
 				CDC8C95122368A9F00F67381 /* VC_Kreditkarte.swift in Sources */,
 				CD6474902229991C00A74F09 /* Auftrag.swift in Sources */,
+				CD0CCD262237F6BA004BD246 /* Stoff.swift in Sources */,
 				CD64748E222994C900A74F09 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,25 +10,30 @@
 
 import UIKit
 
-class gps_con_stof_VC: UIViewController, UIPopoverPresentationControllerDelegate {
+class VC_AuftragNeu_01_ContStoff: UIViewController, UIPopoverPresentationControllerDelegate {
+    
+    
+    @IBOutlet weak var btnContainer: UIButton!
+    @IBOutlet weak var btnStoff: UIButton!
+    
+    
+    var container = Container()
+    
+    
+    var auftrag = Auftrag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+       // container = btnContainer.imageView.
+        
+        
+        
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     
     // POPUPS
     // um Popup zu initiieren
@@ -37,6 +42,13 @@ class gps_con_stof_VC: UIViewController, UIPopoverPresentationControllerDelegate
         if let dest = segue.destination as? PopupViewController, let popPC = dest.popoverPresentationController {
             popPC.delegate = self
         }
+        
+        if let dest = segue.destination as? VC_AuftragNeu_02_Stand {
+           
+            //dest.auftrag =
+            
+        }
+        
     }
     
     // Damit Popups als solche angezeigt werden

@@ -19,7 +19,14 @@ struct Container {
     var coords : [CLLocationCoordinate2D] = []
     
     
-    
+    init() {
+        
+        uvv_faellig = false
+        uvv_letzte = Date()
+        deckel = false
+        groesse = 0
+        coords = [CLLocationCoordinate2DMake(CLLocationDegrees(exactly: 0.0)!, CLLocationDegrees(exactly: 0.0)!)]
+    }
     
     
 }
