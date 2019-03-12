@@ -128,9 +128,9 @@
 		CD04AA322181B2FC00D019FC = {
 			isa = PBXGroup;
 			children = (
-				CD04AA3D2181B2FC00D019FC /* KUKU_V1.0 */,
-				CD04AA562181B2FD00D019FC /* KUKU_V1.0Tests */,
-				CD04AA612181B2FD00D019FC /* KUKU_V1.0UITests */,
+				CD04AA3D2181B2FC00D019FC /* KURZ_V1.0 */,
+				CD04AA562181B2FD00D019FC /* KURZ_V1.0Tests */,
+				CD04AA612181B2FD00D019FC /* KURZ_V1.0UITests */,
 				CD04AA3C2181B2FC00D019FC /* Products */,
 				CD2D746B22296DE500E014E8 /* Frameworks */,
 			);
@@ -146,7 +146,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CD04AA3D2181B2FC00D019FC /* KUKU_V1.0 */ = {
+		CD04AA3D2181B2FC00D019FC /* KURZ_V1.0 */ = {
 			isa = PBXGroup;
 			children = (
 				CDC8C9952236BAA300F67381 /* Auftragserstellung */,
@@ -171,25 +171,25 @@
 				CD04AA722181C17400D019FC /* Storyboard.storyboard */,
 				CD1D795721F06B2C00B44646 /* PopupViewController.swift */,
 			);
-			path = KUKU_V1.0;
+			path = KURZ_V1.0;
 			sourceTree = "<group>";
 		};
-		CD04AA562181B2FD00D019FC /* KUKU_V1.0Tests */ = {
+		CD04AA562181B2FD00D019FC /* KURZ_V1.0Tests */ = {
 			isa = PBXGroup;
 			children = (
 				CD04AA572181B2FD00D019FC /* KUKU_V1_0Tests.swift */,
 				CD04AA592181B2FD00D019FC /* Info.plist */,
 			);
-			path = KUKU_V1.0Tests;
+			path = KURZ_V1.0Tests;
 			sourceTree = "<group>";
 		};
-		CD04AA612181B2FD00D019FC /* KUKU_V1.0UITests */ = {
+		CD04AA612181B2FD00D019FC /* KURZ_V1.0UITests */ = {
 			isa = PBXGroup;
 			children = (
 				CD04AA622181B2FD00D019FC /* KUKU_V1_0UITests.swift */,
 				CD04AA642181B2FD00D019FC /* Info.plist */,
 			);
-			path = KUKU_V1.0UITests;
+			path = KURZ_V1.0UITests;
 			sourceTree = "<group>";
 		};
 		CD2D73F0222939D300E014E8 /* Auftragsverwaltung */ = {
@@ -344,7 +344,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CD04AA362181B2FC00D019FC /* Build configuration list for PBXProject "KUKU_V1.0" */;
+			buildConfigurationList = CD04AA362181B2FC00D019FC /* Build configuration list for PBXProject "KURZ_V1.0" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -598,13 +598,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WH3J98CLZU;
-				INFOPLIST_FILE = KUKU_V1.0/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/KURZ_V1.0/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "BB.KUKU-V1-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "BB.KURZ-V1-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -617,13 +617,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WH3J98CLZU;
-				INFOPLIST_FILE = KUKU_V1.0/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/KURZ_V1.0/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "BB.KUKU-V1-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "BB.KURZ-V1-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -715,7 +715,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD04AA362181B2FC00D019FC /* Build configuration list for PBXProject "KUKU_V1.0" */ = {
+		CD04AA362181B2FC00D019FC /* Build configuration list for PBXProject "KURZ_V1.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD04AA652181B2FD00D019FC /* Debug */,

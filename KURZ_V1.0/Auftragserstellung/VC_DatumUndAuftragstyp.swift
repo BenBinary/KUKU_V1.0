@@ -24,8 +24,6 @@ class VC_DatumUndAuftragstyp: UIViewController {
     @IBAction func sgAuftragstypChanged(_ sender: UISegmentedControl) {
         
         
-        if sg_Auftragstyp.
-        
         
     }
     
