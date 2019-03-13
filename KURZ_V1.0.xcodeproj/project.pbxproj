@@ -32,7 +32,6 @@
 		CD1D796021F12F0700B44646 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795F21F12F0700B44646 /* CustomerViewController.swift */; };
 		CD2D73F222293A7700E014E8 /* auftragsZelle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D73F122293A7700E014E8 /* auftragsZelle.swift */; };
 		CD2D746A22296BFF00E014E8 /* auftragDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D746922296BFF00E014E8 /* auftragDetailVC.swift */; };
-		CD2D746D22296DE500E014E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2D746C22296DE500E014E8 /* MapKit.framework */; };
 		CD2D746F22296FDD00E014E8 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D746E22296FDD00E014E8 /* Container.swift */; };
 		CD2D747222298FB100E014E8 /* auftraegeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D747122298FB100E014E8 /* auftraegeVC.swift */; };
 		CD2DF07222366C0100C4FBC6 /* VC_PayPal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DF07122366C0100C4FBC6 /* VC_PayPal.swift */; };
@@ -46,6 +45,9 @@
 		CDC8C95122368A9F00F67381 /* VC_Kreditkarte.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */; };
 		CDC8C9532236910900F67381 /* VC_VISA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C9522236910900F67381 /* VC_VISA.swift */; };
 		CDC8C9942236A82F00F67381 /* pvJahr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C9932236A82F00F67381 /* pvJahr.swift */; };
+		CDDC872C22391A160026D741 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDC872B22391A160026D741 /* MapKit.framework */; };
+		CDDC87332239464B0026D741 /* stoffAuswahl.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDDC87322239464B0026D741 /* stoffAuswahl.xib */; };
+		CDDC87352239471D0026D741 /* stoffAuswahl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC87342239471D0026D741 /* stoffAuswahl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +99,6 @@
 		CD1D795F21F12F0700B44646 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		CD2D73F122293A7700E014E8 /* auftragsZelle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftragsZelle.swift; sourceTree = "<group>"; };
 		CD2D746922296BFF00E014E8 /* auftragDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftragDetailVC.swift; sourceTree = "<group>"; };
-		CD2D746C22296DE500E014E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CD2D746E22296FDD00E014E8 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		CD2D747122298FB100E014E8 /* auftraegeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftraegeVC.swift; sourceTree = "<group>"; };
 		CD2DF07122366C0100C4FBC6 /* VC_PayPal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_PayPal.swift; sourceTree = "<group>"; };
@@ -111,6 +112,10 @@
 		CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Kreditkarte.swift; sourceTree = "<group>"; };
 		CDC8C9522236910900F67381 /* VC_VISA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_VISA.swift; sourceTree = "<group>"; };
 		CDC8C9932236A82F00F67381 /* pvJahr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pvJahr.swift; sourceTree = "<group>"; };
+		CDDC872B22391A160026D741 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CDDC872D223933B10026D741 /* KUKU_V1.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KUKU_V1.0.entitlements; sourceTree = "<group>"; };
+		CDDC87322239464B0026D741 /* stoffAuswahl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = stoffAuswahl.xib; sourceTree = "<group>"; };
+		CDDC87342239471D0026D741 /* stoffAuswahl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stoffAuswahl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD2D746D22296DE500E014E8 /* MapKit.framework in Frameworks */,
+				CDDC872C22391A160026D741 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +147,7 @@
 		CD04AA322181B2FC00D019FC = {
 			isa = PBXGroup;
 			children = (
+				CDDC872D223933B10026D741 /* KUKU_V1.0.entitlements */,
 				CD04AA3D2181B2FC00D019FC /* KURZ_V1.0 */,
 				CD04AA562181B2FD00D019FC /* KURZ_V1.0Tests */,
 				CD04AA612181B2FD00D019FC /* KURZ_V1.0UITests */,
@@ -252,7 +258,7 @@
 		CD2D746B22296DE500E014E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CD2D746C22296DE500E014E8 /* MapKit.framework */,
+				CDDC872B22391A160026D741 /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -282,6 +288,8 @@
 				CD0CCD292237FF6C004BD246 /* PVC_AuftragNeu_ZSM_1.swift */,
 				CD9491BB2238F8CC0013E297 /* VC_AuftragNeu_03_Typ_Datum.swift */,
 				CD9491BD2239041F0013E297 /* VC_AuftragNeu_ZSM_1.swift */,
+				CDDC87322239464B0026D741 /* stoffAuswahl.xib */,
+				CDDC87342239471D0026D741 /* stoffAuswahl.swift */,
 			);
 			path = Auftragserstellung;
 			sourceTree = "<group>";
@@ -358,8 +366,14 @@
 							com.apple.BackgroundModes = {
 								enabled = 0;
 							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
 							com.apple.Maps.iOS = {
 								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 0;
 							};
 						};
 					};
@@ -403,6 +417,7 @@
 				CD04AA4D2181B2FD00D019FC /* LaunchScreen.storyboard in Resources */,
 				CD04AA4A2181B2FD00D019FC /* Assets.xcassets in Resources */,
 				CD04AA482181B2FC00D019FC /* Main.storyboard in Resources */,
+				CDDC87332239464B0026D741 /* stoffAuswahl.xib in Resources */,
 				CD04AA732181C17400D019FC /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDC87352239471D0026D741 /* stoffAuswahl.swift in Sources */,
 				CD1D795421F052FE00B44646 /* PopupWasteViewController.swift in Sources */,
 				CD2D747222298FB100E014E8 /* auftraegeVC.swift in Sources */,
 				CD1D795621F06A7300B44646 /* PopupContainerViewController.swift in Sources */,
@@ -632,6 +648,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KUKU_V1.0.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = WH3J98CLZU;
@@ -641,8 +659,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "BB.KURZ-V1-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "BK.KURZ-V1-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -652,6 +671,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KUKU_V1.0.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = WH3J98CLZU;
@@ -661,8 +682,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "BB.KURZ-V1-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "BK.KURZ-V1-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

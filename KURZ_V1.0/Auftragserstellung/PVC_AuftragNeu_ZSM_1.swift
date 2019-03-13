@@ -9,6 +9,8 @@
 import UIKit
 
 class PVC_AuftragNeu_ZSM_1: UIPageViewController {
+    
+    var auftrag = Auftrag()
 
     override func viewDidLoad() {
         super.viewDidLoad()

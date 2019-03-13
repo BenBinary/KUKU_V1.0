@@ -34,7 +34,8 @@ class VC_AuftragNeu_ZSM_1: UIViewController {
         dateFormatter.dateStyle = .medium
         dateFormatter.timeZone = .none
         dateFormatter.locale = Locale(identifier: "de_DE")
-        lblAnlieferung.text = "Anlieferung: \(dateFormatter.string(from: auftrag.deliverDate))"
+        
+    //    lblAnlieferung.text = "Anlieferung: \(dateFormatter.string(from: auftrag.deliverDate))"
         
         if (auftrag.typ == Auftragstyp.Anlieferung ) {
             lblAbholung.isHidden = true

@@ -809,47 +809,33 @@
             <objects>
                 <viewController storyboardIdentifier="wasteChoice" id="Fej-X2-m1e" customClass="PopupWasteViewController" customModule="KUKU_V1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sVk-Jj-soZ">
-                        <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bitte wählen Sie eine Abfallsorte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH4-J5-aLI">
-                                <rect key="frame" x="2" y="9" width="246" height="21"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hJx-vI-6Hx">
+                                <rect key="frame" x="0.0" y="364" width="300" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brick" translatesAutoresizingMaskIntoConstraints="NO" id="9MQ-W6-bhv">
-                                <rect key="frame" x="16" y="77" width="85" height="58"/>
+                                <color key="pageIndicatorTintColor" red="0.80417478239999995" green="0.43417733860000002" blue="0.04650801056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ChQ-xd-2Rx">
+                                <rect key="frame" x="0.0" y="57" width="300" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Waterbottle" translatesAutoresizingMaskIntoConstraints="NO" id="Y1r-Rf-0GT">
-                                <rect key="frame" x="73" y="71" width="74" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dad-aH-dUp">
-                                <rect key="frame" x="114" y="300" width="110" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Brick"/>
-                                <connections>
-                                    <action selector="btnBrick:" destination="Fej-X2-m1e" eventType="touchUpInside" id="r1E-KL-dMb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSY-xY-v3D">
-                                <rect key="frame" x="24" y="250" width="77" height="118"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Waterbottle"/>
-                            </button>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bo1-bf-LY4"/>
                     </view>
-                    <value key="contentSizeForViewInPopover" type="size" width="250" height="400"/>
-                    <size key="freeformSize" width="250" height="400"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="300" height="400"/>
+                    <size key="freeformSize" width="300" height="400"/>
+                    <connections>
+                        <outlet property="pagecontrol" destination="hJx-vI-6Hx" id="V08-HH-SXJ"/>
+                        <outlet property="scrollview" destination="ChQ-xd-2Rx" id="9Ph-FR-mhO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmv-lt-udN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1292" y="1274"/>
+            <point key="canvasLocation" x="1291.875" y="1273.943661971831"/>
         </scene>
         <!--Popup Container View Controller-->
         <scene sceneID="2kL-Sa-Nel">
@@ -1692,7 +1678,6 @@
         <image name="ABS_5QM_OFFEN" width="300" height="192"/>
         <image name="ABS_7QM_DECKEL" width="212.39999389648438" height="133.91999816894531"/>
         <image name="ABS_7QM_OFFEN" width="201.60000610351562" height="128.16000366210938"/>
-        <image name="Brick" width="960" height="540"/>
         <image name="Kuku_logo" width="912.75" height="263.25"/>
         <image name="Lastschrift" width="1000" height="1180"/>
         <image name="Mastercard" width="1000" height="600"/>
