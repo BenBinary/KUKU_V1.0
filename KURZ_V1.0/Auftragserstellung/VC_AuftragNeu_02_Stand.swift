@@ -28,9 +28,18 @@ class VC_AuftragNeu_02_Stand: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      //  auftrag = Auftrag()
+        // Setzen des aktuellen Standortes
+        mapStandort.showsUserLocation = true
+        auftrag.container.coords = [mapStandort.userLocation.coordinate]
+        
+        //Ausfüllen der Lieferadresse
+        txtStadt.text = auftrag.container.stadt
+        txtAdresszusatz.text = auftrag.container.adresszusatz
+        txtHausNr.text = String(auftrag.container.hausnr)
+        txtPLZ.text = String(auftrag.container.plz)
+        txtStrasse.text = auftrag.container.strasse
 
-        // Do any additional setup after loading the view.
+        
     }
     
     
@@ -51,14 +60,15 @@ class VC_AuftragNeu_02_Stand: UIViewController {
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+       
+        
+        if let vc = segue.destination as? VC_AuftragNeu_03_Typ_Datum {
+            vc.auftrag = self.auftrag
+        }
+        
     }
-    */
+    
 
 }

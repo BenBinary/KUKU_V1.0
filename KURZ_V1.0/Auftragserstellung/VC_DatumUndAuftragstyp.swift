@@ -8,9 +8,11 @@
 
 import UIKit
 
-class VC_DatumUndAuftragstyp: UIViewController {
+class VC_AuftragNeu_03_Typ_Datum: UIViewController {
 
     @IBOutlet weak var sg_Auftragstyp: UISegmentedControl!
+    
+     var auftrag = Auftrag()
     
     override func viewDidLoad() {
         super.viewDidLoad()

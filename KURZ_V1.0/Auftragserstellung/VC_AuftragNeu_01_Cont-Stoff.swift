@@ -29,6 +29,14 @@ class VC_AuftragNeu_01_ContStoff: UIViewController, UIPopoverPresentationControl
        // container = btnContainer.imageView.
         
         
+        auftrag.kunde?.nachname = "Kurz"
+        auftrag.kunde?.vorname = "Benedikt"
+        
+        auftrag.container.plz = 71723
+        auftrag.container.stadt = "Großbottwar"
+        auftrag.container.hausnr = 42
+        auftrag.container.strasse = "Kantstr"
+        
         
         
     }
@@ -43,12 +51,19 @@ class VC_AuftragNeu_01_ContStoff: UIViewController, UIPopoverPresentationControl
             popPC.delegate = self
         }
         
+        if segue.destination is VC_AuftragNeu_02_Stand {
+            let vc = segue.destination as? VC_AuftragNeu_02_Stand
+            vc?.auftrag = auftrag
+        }
+        
+        
+        /*
         if let dest = segue.destination as? VC_AuftragNeu_02_Stand {
            
             //dest.auftrag =
             
         }
-        
+        */
     }
     
     // Damit Popups als solche angezeigt werden

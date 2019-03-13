@@ -39,11 +39,13 @@
 		CD2DF07422366C2F00C4FBC6 /* VC_Bezahlung.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DF07322366C2F00C4FBC6 /* VC_Bezahlung.swift */; };
 		CD64748E222994C900A74F09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64748D222994C900A74F09 /* User.swift */; };
 		CD6474902229991C00A74F09 /* Auftrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64748F2229991C00A74F09 /* Auftrag.swift */; };
+		CD9491BC2238F8CC0013E297 /* VC_AuftragNeu_03_Typ_Datum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9491BB2238F8CC0013E297 /* VC_AuftragNeu_03_Typ_Datum.swift */; };
+		CD9491BE2239041F0013E297 /* VC_AuftragNeu_ZSM_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9491BD2239041F0013E297 /* VC_AuftragNeu_ZSM_1.swift */; };
+		CD9491C0223908360013E297 /* Auftragstyp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9491BF223908360013E297 /* Auftragstyp.swift */; };
 		CDC8C94F223678CF00F67381 /* VC_Lastschrift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C94E223678CF00F67381 /* VC_Lastschrift.swift */; };
 		CDC8C95122368A9F00F67381 /* VC_Kreditkarte.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */; };
 		CDC8C9532236910900F67381 /* VC_VISA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C9522236910900F67381 /* VC_VISA.swift */; };
 		CDC8C9942236A82F00F67381 /* pvJahr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C9932236A82F00F67381 /* pvJahr.swift */; };
-		CDC8C9972236BAE000F67381 /* VC_DatumUndAuftragstyp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C9962236BAE000F67381 /* VC_DatumUndAuftragstyp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,11 +104,13 @@
 		CD2DF07322366C2F00C4FBC6 /* VC_Bezahlung.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Bezahlung.swift; sourceTree = "<group>"; };
 		CD64748D222994C900A74F09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CD64748F2229991C00A74F09 /* Auftrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auftrag.swift; sourceTree = "<group>"; };
+		CD9491BB2238F8CC0013E297 /* VC_AuftragNeu_03_Typ_Datum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_AuftragNeu_03_Typ_Datum.swift; sourceTree = "<group>"; };
+		CD9491BD2239041F0013E297 /* VC_AuftragNeu_ZSM_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_AuftragNeu_ZSM_1.swift; sourceTree = "<group>"; };
+		CD9491BF223908360013E297 /* Auftragstyp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auftragstyp.swift; sourceTree = "<group>"; };
 		CDC8C94E223678CF00F67381 /* VC_Lastschrift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Lastschrift.swift; sourceTree = "<group>"; };
 		CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Kreditkarte.swift; sourceTree = "<group>"; };
 		CDC8C9522236910900F67381 /* VC_VISA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_VISA.swift; sourceTree = "<group>"; };
 		CDC8C9932236A82F00F67381 /* pvJahr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pvJahr.swift; sourceTree = "<group>"; };
-		CDC8C9962236BAE000F67381 /* VC_DatumUndAuftragstyp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_DatumUndAuftragstyp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,7 @@
 				CD64748F2229991C00A74F09 /* Auftrag.swift */,
 				CD0CCD232237F130004BD246 /* Stoffe.swift */,
 				CD0CCD252237F6BA004BD246 /* Stoff.swift */,
+				CD9491BF223908360013E297 /* Auftragstyp.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -273,9 +278,10 @@
 				CD1D795321F052FE00B44646 /* PopupWasteViewController.swift */,
 				CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */,
 				CD1D795921F0717700B44646 /* VC_AuftragNeu_01_Cont-Stoff.swift */,
-				CDC8C9962236BAE000F67381 /* VC_DatumUndAuftragstyp.swift */,
 				CD0CCD212237EBE3004BD246 /* VC_AuftragNeu_02_Stand.swift */,
 				CD0CCD292237FF6C004BD246 /* PVC_AuftragNeu_ZSM_1.swift */,
+				CD9491BB2238F8CC0013E297 /* VC_AuftragNeu_03_Typ_Datum.swift */,
+				CD9491BD2239041F0013E297 /* VC_AuftragNeu_ZSM_1.swift */,
 			);
 			path = Auftragserstellung;
 			sourceTree = "<group>";
@@ -428,13 +434,13 @@
 				CD04AA412181B2FC00D019FC /* RootViewController.swift in Sources */,
 				CD1D795E21F12E3B00B44646 /* Kunde.swift in Sources */,
 				CD0CCD222237EBE3004BD246 /* VC_AuftragNeu_02_Stand.swift in Sources */,
+				CD9491BC2238F8CC0013E297 /* VC_AuftragNeu_03_Typ_Datum.swift in Sources */,
 				CD2DF07422366C2F00C4FBC6 /* VC_Bezahlung.swift in Sources */,
 				CD04AA452181B2FC00D019FC /* ModelController.swift in Sources */,
 				CD2D746A22296BFF00E014E8 /* auftragDetailVC.swift in Sources */,
 				CD2D73F222293A7700E014E8 /* auftragsZelle.swift in Sources */,
 				CDC8C94F223678CF00F67381 /* VC_Lastschrift.swift in Sources */,
 				CDC8C9942236A82F00F67381 /* pvJahr.swift in Sources */,
-				CDC8C9972236BAE000F67381 /* VC_DatumUndAuftragstyp.swift in Sources */,
 				CD2DF07222366C0100C4FBC6 /* VC_PayPal.swift in Sources */,
 				CD0CCD242237F130004BD246 /* Stoffe.swift in Sources */,
 				CDC8C9532236910900F67381 /* VC_VISA.swift in Sources */,
@@ -445,8 +451,10 @@
 				CD101A3121DECC5A004C81B0 /* ViewController.swift in Sources */,
 				CD04AA432181B2FC00D019FC /* DataViewController.swift in Sources */,
 				CD04AA3F2181B2FC00D019FC /* AppDelegate.swift in Sources */,
+				CD9491BE2239041F0013E297 /* VC_AuftragNeu_ZSM_1.swift in Sources */,
 				CD2D746F22296FDD00E014E8 /* Container.swift in Sources */,
 				CDC8C95122368A9F00F67381 /* VC_Kreditkarte.swift in Sources */,
+				CD9491C0223908360013E297 /* Auftragstyp.swift in Sources */,
 				CD6474902229991C00A74F09 /* Auftrag.swift in Sources */,
 				CD0CCD262237F6BA004BD246 /* Stoff.swift in Sources */,
 				CD64748E222994C900A74F09 /* User.swift in Sources */,
@@ -625,6 +633,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = WH3J98CLZU;
 				INFOPLIST_FILE = "$(SRCROOT)/KURZ_V1.0/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -644,6 +653,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = WH3J98CLZU;
 				INFOPLIST_FILE = "$(SRCROOT)/KURZ_V1.0/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;

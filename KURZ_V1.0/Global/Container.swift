@@ -17,6 +17,12 @@ struct Container {
     var deckel : Bool
     var groesse : Int
     var coords : [CLLocationCoordinate2D] = []
+    var strasse : String
+    var hausnr : Int
+    var plz : Int
+    var stadt : String
+    var adresszusatz : String
+    
     
     
     init() {
@@ -26,6 +32,11 @@ struct Container {
         deckel = false
         groesse = 0
         coords = [CLLocationCoordinate2DMake(CLLocationDegrees(exactly: 0.0)!, CLLocationDegrees(exactly: 0.0)!)]
+        strasse = ""
+        hausnr = 0
+        plz = 0
+        stadt = ""
+        adresszusatz = ""
     }
     
     

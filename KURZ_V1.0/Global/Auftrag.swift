@@ -14,6 +14,7 @@ struct Auftrag {
     static var index = 0;
     let auftragsNr : Int
     var kunde : Kunde?
+    var typ = Auftragstyp.Anlieferung
     lazy var orderDate : Date = Date()
     lazy var deliverDate : Date = Date()
     lazy var pickupDate : Date = Date()
