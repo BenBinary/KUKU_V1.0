@@ -17,7 +17,11 @@ class stoffAuswahl: UIView {
     @IBOutlet weak var btnImg3: UIButton!
     @IBOutlet weak var btnImg4: UIButton!
     
-
+    @IBAction func btn1Press(_ sender: UIButton) {
+        
+        print(btnImg1.title(for: .normal))
+    }
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -25,5 +29,7 @@ class stoffAuswahl: UIView {
         // Drawing code
     }
     */
+    
+    
 
 }

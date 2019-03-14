@@ -57,19 +57,22 @@ class PopupWasteViewController: PopupViewController, UIScrollViewDelegate {
         let stoff1:stoffAuswahl = Bundle.main.loadNibNamed("stoffAuswahl", owner: self, options: nil)?.first as! stoffAuswahl
         
         stoff1.btnImg1.imageView?.image = UIImage(named: "stoff_bau_und_abbruchabfaelle")
-        stoff1.btnImg2.imageView?.image = UIImage(named: "stoff_bma")
-        stoff1.btnImg3.imageView?.image = UIImage(named: "stoff_erdaushub")
-        stoff1.btnImg4.imageView?.image = UIImage(named: "stoff_gemsichte_abfaelle")
+        stoff1.btnImg1.setImage(UIImage(named: "stoff_bau_und_abbruchabfaelle"), for: .normal)
+        stoff1.btnImg1.setTitle("Bau und Abbruchabfälle", for: .normal)
+        
+        stoff1.btnImg2.setImage(UIImage(named: "stoff_bma"), for: .normal)
+        stoff1.btnImg3.setImage(UIImage(named: "stoff_erdaushub"), for: .normal)
+        stoff1.btnImg4.setImage(UIImage(named: "stoff_gemischte_abfaelle"), for: .normal)
         
         let stoff2:stoffAuswahl = Bundle.main.loadNibNamed("stoffAuswahl", owner: self, options: nil)?.first as! stoffAuswahl
-        stoff2.btnImg1.imageView?.image = UIImage(named: "stoff_gips")
-        stoff2.btnImg2.imageView?.image = UIImage(named: "stoff_gruengut")
-        stoff2.btnImg3.imageView?.image = UIImage(named: "stoff_holz_a1a3")
-        stoff2.btnImg4.imageView?.image = UIImage(named: "stoff_holz_a4")
+        stoff2.btnImg1.setImage(UIImage(named: "stoff_gips"), for: .normal)
+        stoff2.btnImg2.setImage(UIImage(named: "stoff_gruengut"), for: .normal)
+        stoff2.btnImg3.setImage(UIImage(named: "stoff_holz_a1a3"), for: .normal)
+        stoff2.btnImg4.setImage(UIImage(named: "stoff_holz_a4"), for: .normal)
         
         let stoff3:stoffAuswahl = Bundle.main.loadNibNamed("stoffAuswahl", owner: self, options: nil)?.first as! stoffAuswahl
-        stoff3.btnImg1.imageView?.image = UIImage(named: "stoff_papier")
-        stoff3.btnImg2.imageView?.image = UIImage(named: "stoff_sperrmuell")
+        stoff3.btnImg1.setImage(UIImage(named: "stoff_papier"), for: .normal)
+        stoff3.btnImg2.setImage(UIImage(named: "stoff_sperrmuell"), for: .normal)
         
         
         return [stoff1, stoff2, stoff3]
@@ -101,8 +104,18 @@ class PopupWasteViewController: PopupViewController, UIScrollViewDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        // Rückgabe des ausgwählten Stoffes
         
-        
+        if (segue.destination is VC_AuftragNeu_01_ContStoff) {
+            
+            let vc = segue.destination as? VC_AuftragNeu_01_ContStoff
+            
+            //vc?.auftrag.stoff = stoffe.
+            
+            
+            
+            
+        }
         
         
     }

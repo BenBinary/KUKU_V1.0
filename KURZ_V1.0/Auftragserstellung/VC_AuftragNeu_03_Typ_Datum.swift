@@ -57,20 +57,38 @@ class VC_AuftragNeu_03_Typ_Datum: UIViewController {
         if let json_auftrag = try? encoder.encode(auftrag) {
         
             print(json_auftrag)
-            
+       
             if let json_string_auftrag = String(data: json_auftrag, encoding: .utf8) {
                 
                 // ToDo -> Hier müssen noch die Daten gespeichert werden
+                
+                // Eingabe des Dokumenten-Verzeichnises
+                
+                let documentdir = getDocumentsDirectory()
+                let auftrag_file = documentdir.appendingPathComponent("auftrag.txt")
+                print(auftrag_file.absoluteString)
+                do {
+                    
+                    // Prüfen ob das Verzeichnis bereits exisitiert
+                    
+                    try json_string_auftrag.write(to: auftrag_file, atomically: true, encoding: .utf8) } catch {
+                    print(error)
+                }
+                
                 
                 print(json_string_auftrag)
             }
         }
         
-        
-        
         print("Hallo")
         
-        
+    }
+    
+    
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
     }
     
     @IBAction func dpChangeAbzug(_ sender: UIDatePicker) {
