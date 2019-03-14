@@ -24,6 +24,7 @@
 		CD0CCD282237F6D9004BD246 /* About in Resources */ = {isa = PBXBuildFile; fileRef = CD0CCD272237F6D9004BD246 /* About */; };
 		CD0CCD2A2237FF6C004BD246 /* PVC_AuftragNeu_ZSM_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CCD292237FF6C004BD246 /* PVC_AuftragNeu_ZSM_1.swift */; };
 		CD101A3121DECC5A004C81B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD101A3021DECC5A004C81B0 /* ViewController.swift */; };
+		CD1050F3223A7DA000AFD91F /* ContainerTyp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1050F2223A7DA000AFD91F /* ContainerTyp.swift */; };
 		CD1D795421F052FE00B44646 /* PopupWasteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795321F052FE00B44646 /* PopupWasteViewController.swift */; };
 		CD1D795621F06A7300B44646 /* PopupContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */; };
 		CD1D795821F06B2C00B44646 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795721F06B2C00B44646 /* PopupViewController.swift */; };
@@ -91,6 +92,7 @@
 		CD0CCD272237F6D9004BD246 /* About */ = {isa = PBXFileReference; lastKnownFileType = text; path = About; sourceTree = "<group>"; };
 		CD0CCD292237FF6C004BD246 /* PVC_AuftragNeu_ZSM_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVC_AuftragNeu_ZSM_1.swift; sourceTree = "<group>"; };
 		CD101A3021DECC5A004C81B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD1050F2223A7DA000AFD91F /* ContainerTyp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerTyp.swift; sourceTree = "<group>"; };
 		CD1D795321F052FE00B44646 /* PopupWasteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupWasteViewController.swift; sourceTree = "<group>"; };
 		CD1D795521F06A7300B44646 /* PopupContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupContainerViewController.swift; sourceTree = "<group>"; };
 		CD1D795721F06B2C00B44646 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				CD0CCD232237F130004BD246 /* Stoffe.swift */,
 				CD0CCD252237F6BA004BD246 /* Stoff.swift */,
 				CD9491BF223908360013E297 /* Auftragstyp.swift */,
+				CD1050F2223A7DA000AFD91F /* ContainerTyp.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 			files = (
 				CDDC87352239471D0026D741 /* stoffAuswahl.swift in Sources */,
 				CD1D795421F052FE00B44646 /* PopupWasteViewController.swift in Sources */,
+				CD1050F3223A7DA000AFD91F /* ContainerTyp.swift in Sources */,
 				CD2D747222298FB100E014E8 /* auftraegeVC.swift in Sources */,
 				CD1D795621F06A7300B44646 /* PopupContainerViewController.swift in Sources */,
 				CD04AA412181B2FC00D019FC /* RootViewController.swift in Sources */,

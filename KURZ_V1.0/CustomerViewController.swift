@@ -8,12 +8,29 @@
 
 import UIKit
 
-class CustomerViewController: UIViewController {
+class CustomerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+          return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
 
     @IBOutlet weak var txtVorname: UITextField!
     @IBOutlet weak var txtNachname: UITextField!
     @IBOutlet weak var date: UIDatePicker!
+    @IBOutlet weak var pvBenutzergruppe: UIPickerView!
     
+    
+    var pickerData: [String] = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +48,15 @@ class CustomerViewController: UIViewController {
         txtVorname.isEnabled = false
         txtNachname.isEnabled = false
         
+        // Verbinden der Daten zur Picker View
+        self.pvBenutzergruppe.delegate = self
+        self.pvBenutzergruppe.dataSource = self
         
         
-        //txtVorname.text = mKunde.
+        
+        // Input Daten für die Picker View
+        pickerData = ["Privatkunde", "Geschäftskunde (Unternehmer i.S.d. UStG)", "Geschäftskunde (Kleinunternehmer nach § 19 UStG)", "Geschäftskunde (Kein Unternehmer i.S.d. UStG)"]
+        
         
     }
     

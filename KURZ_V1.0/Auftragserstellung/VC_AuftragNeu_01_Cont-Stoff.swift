@@ -13,6 +13,8 @@ import UIKit
 class VC_AuftragNeu_01_ContStoff: UIViewController, UIPopoverPresentationControllerDelegate {
     
     
+    var containerWahl = ContainerTyp.none
+    
     @IBOutlet weak var btnContainer: UIButton!
     @IBOutlet weak var btnStoff: UIButton!
     
@@ -37,7 +39,9 @@ class VC_AuftragNeu_01_ContStoff: UIViewController, UIPopoverPresentationControl
         auftrag.container.hausnr = 42
         auftrag.container.strasse = "Kantstr"
         
+        print(containerWahl)
         
+        btnContainer.setImage(UIImage(named: containerWahl.rawValue), for: .normal)
         
     }
     
@@ -57,13 +61,13 @@ class VC_AuftragNeu_01_ContStoff: UIViewController, UIPopoverPresentationControl
         }
         
         
-        /*
+        
         if let dest = segue.destination as? VC_AuftragNeu_02_Stand {
            
             //dest.auftrag =
             
         }
-        */
+ 
     }
     
     // Damit Popups als solche angezeigt werden
