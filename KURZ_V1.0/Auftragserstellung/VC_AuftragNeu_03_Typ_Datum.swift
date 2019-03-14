@@ -46,7 +46,33 @@ class VC_AuftragNeu_03_Typ_Datum: UIViewController {
         auftrag.deliverDate = dpAnlieferung.date
     }
     
-
+    @IBAction func btnWeiter(_ sender: UIButton) {
+        
+        // Encodieren im JSON-Format
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        encoder.dateEncodingStrategy = .iso8601
+        
+        
+        if let json_auftrag = try? encoder.encode(auftrag) {
+        
+            print(json_auftrag)
+            
+            if let json_string_auftrag = String(data: json_auftrag, encoding: .utf8) {
+                
+                // ToDo -> Hier müssen noch die Daten gespeichert werden
+                
+                print(json_string_auftrag)
+            }
+        }
+        
+        
+        
+        print("Hallo")
+        
+        
+    }
+    
     @IBAction func dpChangeAbzug(_ sender: UIDatePicker) {
         
         auftrag.pickupDate = dpAbzug.date

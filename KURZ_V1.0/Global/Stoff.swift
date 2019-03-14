@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Stoff {
+struct Stoff : Codable {
     
     var name : String
     var beschreibung : String

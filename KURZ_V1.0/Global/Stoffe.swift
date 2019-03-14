@@ -9,7 +9,12 @@
 import Foundation
 
 
-enum Stoffe {
+enum Stoffe: String {
+    
+    
+   
+    
+ 
     
     
     case Sperrmuell, gemischte_Siedlungsabfaelle

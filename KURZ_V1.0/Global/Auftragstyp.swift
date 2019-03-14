@@ -9,7 +9,7 @@
 import Foundation
 
 
-enum Auftragstyp {
+enum Auftragstyp : String, CodingKey {
     
     
     case Anlieferung, AnlieferungAbholung
