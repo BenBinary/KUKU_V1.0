@@ -320,18 +320,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1G1-Nt-PKq">
-                                <rect key="frame" x="249" y="514" width="55" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Weiter">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="n1Q-2l-T8W" kind="show" id="M7T-K3-MML"/>
-                                </connections>
-                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IeS-Mx-1eD">
                                 <rect key="frame" x="14" y="80" width="293" height="417"/>
                                 <subviews>
@@ -371,16 +359,27 @@
                                     </button>
                                 </subviews>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpZ-S5-zhS">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpZ-S5-zhS">
                                 <rect key="frame" x="16" y="516" width="47" height="30"/>
                                 <state key="normal" title="zurück"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1G1-Nt-PKq">
+                                <rect key="frame" x="250" y="512" width="55" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Weiter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="n1Q-2l-T8W" kind="show" id="M7T-K3-MML"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93387585878372192" green="0.44579005241394043" blue="0.0078508714213967323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WSL-Gq-jfT" firstAttribute="trailing" secondItem="IeS-Mx-1eD" secondAttribute="trailing" constant="13" id="1kP-XM-f9G"/>
                             <constraint firstItem="WSL-Gq-jfT" firstAttribute="trailing" secondItem="1G1-Nt-PKq" secondAttribute="trailing" constant="132" id="5LS-2p-HG9"/>
-                            <constraint firstItem="1G1-Nt-PKq" firstAttribute="firstBaseline" secondItem="IeS-Mx-1eD" secondAttribute="baseline" constant="27" symbolType="layoutAnchor" id="Du6-Sw-25e"/>
                             <constraint firstItem="IeS-Mx-1eD" firstAttribute="leading" secondItem="WSL-Gq-jfT" secondAttribute="leading" constant="14" id="LJ1-tS-Q8S"/>
                             <constraint firstItem="IeS-Mx-1eD" firstAttribute="top" secondItem="WSL-Gq-jfT" secondAttribute="top" constant="16" id="V2I-zo-Maf"/>
                             <constraint firstItem="1G1-Nt-PKq" firstAttribute="leading" secondItem="WSL-Gq-jfT" secondAttribute="leading" constant="133" id="ZWf-HW-LwR"/>

@@ -22,7 +22,7 @@ struct Auftrag : Codable {
     
     static var index = 0;
     var typ : Auftragstyp
-    let auftragsNr : Int
+    var auftragsNr : Int
     var kunde : Kunde?
     var orderDate : Date
     var deliverDate : Date
@@ -35,12 +35,17 @@ struct Auftrag : Codable {
     lazy var status = 0
     var container : Container
     lazy var stoff = Stoffe.Sperrmuell
+    var strasse = ""
+    var hausnr = 0
+    var adresszusatz = ""
+    var plz = 0
+    var stadt = ""
     
     
     enum CodingKeys : String, CodingKey {
         
         
-        case index, auftragsNr, payed, billed, orderDate, deliverDate, pickupDate, container
+        case index, auftragsNr, payed, billed, orderDate, deliverDate, pickupDate, container, strasse, hausnr, adresszusatz, plz, stadt
     }
     
     init() {
@@ -52,42 +57,50 @@ struct Auftrag : Codable {
         kunde = Kunde()
         
         
-        // Initialisieren
+        // Initialisieren von non-Lazys
         orderDate = Date()
         deliverDate = Date()
         pickupDate = Date()
         container = Container()
-        
         typ = Auftragstyp.Anlieferung
     }
+    
     
     init(from decoder: Decoder) throws {
         
         do {
-//
-//            var container = try decoder.container(keyedBy: CodingKeys.self)
-//            try container.enc
+            
+            /*
+             Returns the data stored in this decoder as represented in a container keyed by the given key type.
+             Required.
+            */
+
+            var container = try decoder.container(keyedBy: CodingKeys.self)
+            let auftragsNr: Int = try container.decode(Int.self, forKey: .auftragsNr)
+            let deliverDate: Date = try container.decode(Date.self, forKey: .deliverDate)
+            let orderDate: Date = try container.decode(Date.self, forKey: .orderDate)
+            let pickupDate: Date = try container.decode(Date.self, forKey: .pickupDate)
+            let strasse: String = try container.decode(String.self, forKey: .strasse)
+            let hausnr: Int = try container.decode(Int.self, forKey: .hausnr)
+            let adresszusatz: String = try container.decode(String.self, forKey: .adresszusatz)
+            let plz: Int = try container.decode(Int.self, forKey: .plz)
+            let stadt: String = try container.decode(String.self, forKey: .stadt)
             
             
+            self.init(kunde: Kunde(), datum: Date(), payed: false, delivered: false, deliverdate: deliverDate, pickupdate: pickupDate, strasse: strasse, hausnr: hausnr, adresszusatz: adresszusatz, plz: plz, stadt: stadt)
+            
+        } catch {
+            print(error)
+            self.init()
         }
-        // Auftragsnummer hinzufügen
-        Auftrag.index = Auftrag.index + 1
-        auftragsNr = Auftrag.index
         
-        kunde = Kunde()
-        
-        
-        // Initialisieren
-        orderDate = Date()
-        deliverDate = Date()
-        pickupDate = Date()
-        container = Container()
-        typ = Auftragstyp.Anlieferung
+    
     }
 
     func encode(to encoder: Encoder) throws {
 
         do {
+            // encoding container
             var container = encoder.container(keyedBy: CodingKeys.self)
            // try container.encode(self.index, forKey: .index)
             try container.encode(auftragsNr, forKey: .auftragsNr)
@@ -97,7 +110,11 @@ struct Auftrag : Codable {
             //try container.encode(container, forKey: .container)
             try container.encode(payed, forKey: .payed)
             try container.encode(billed, forKey: .billed)
-            try container.encode(billed, forKey: .billed)
+            try container.encode(strasse, forKey: .strasse)
+            try container.encode(hausnr, forKey: .hausnr)
+            try container.encode(adresszusatz, forKey: .adresszusatz)
+            try container.encode(plz, forKey: .plz)
+            try container.encode(stadt, forKey: .stadt)
             
         } catch {
             print(error)
@@ -108,6 +125,7 @@ struct Auftrag : Codable {
 
 
     }
+    
     
     init(kunde : Kunde, datum : Date, payed : Bool, delivered : Bool) {
         
@@ -122,10 +140,39 @@ struct Auftrag : Codable {
         //        self.delivered = false
         //        self.delivered = delivered
         
+  
         
-        deliverDate = Date.init()
-        //        billed = false
-        pickupDate = Date.init()
+        // Initialisieren von non-Lazys
+        orderDate = Date()
+        deliverDate = Date()
+        pickupDate = Date()
+        container = Container()
+        typ = Auftragstyp.Anlieferung
+        
+        
+    }
+    
+    init(kunde : Kunde, datum : Date, payed : Bool, delivered : Bool, deliverdate : Date, pickupdate : Date, strasse : String, hausnr : Int, adresszusatz : String, plz : Int, stadt : String) {
+        
+        // Auftragsnummer hinzufügen
+        Auftrag.index = Auftrag.index + 1
+        auftragsNr = Auftrag.index
+        
+        self.kunde = kunde
+        self.orderDate = datum
+        //        self.payed = false
+        //        self.payed = payed
+        //        self.delivered = false
+        //        self.delivered = delivered
+        
+        
+        self.deliverDate = deliverdate
+        self.pickupDate = pickupdate
+        self.strasse = strasse
+        self.hausnr = hausnr
+        self.adresszusatz = adresszusatz
+        self.plz = plz
+        self.stadt = stadt
         
         
         typ = Auftragstyp.Anlieferung

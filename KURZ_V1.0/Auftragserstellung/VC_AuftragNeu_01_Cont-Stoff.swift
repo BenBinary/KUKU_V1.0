@@ -39,6 +39,12 @@ class VC_AuftragNeu_01_ContStoff: UIViewController, UIPopoverPresentationControl
         auftrag.container.hausnr = 42
         auftrag.container.strasse = "Kantstr"
         
+        auftrag.hausnr = 40
+        auftrag.adresszusatz = "hinterer Eingang"
+        auftrag.strasse = "Tremoniastr"
+        auftrag.plz = 44137
+        auftrag.stadt = "Dortmund"
+        
         print(containerWahl)
         
         btnContainer.setImage(UIImage(named: containerWahl.rawValue), for: .normal)

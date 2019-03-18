@@ -63,14 +63,11 @@ class VC_AuftragNeu_03_Typ_Datum: UIViewController {
                 // ToDo -> Hier müssen noch die Daten gespeichert werden
                 
                 // Eingabe des Dokumenten-Verzeichnises
-                
+              
                 let documentdir = getDocumentsDirectory()
-                let auftrag_file = documentdir.appendingPathComponent("auftrag.txt")
+                let auftrag_file = documentdir.appendingPathComponent("auftrag.json")
                 print(auftrag_file.absoluteString)
-                do {
-                    
-                    // Prüfen ob das Verzeichnis bereits exisitiert
-                    
+                do {                   // Schreiben der JSON-Datei in das lokale Dokumenten-Verzeichnis
                     try json_string_auftrag.write(to: auftrag_file, atomically: true, encoding: .utf8) } catch {
                     print(error)
                 }
@@ -79,8 +76,35 @@ class VC_AuftragNeu_03_Typ_Datum: UIViewController {
                 print(json_string_auftrag)
             }
         }
+       
+    }
+    
+    static func saveAuftrag(_ data: Auftrag) {
         
-        print("Hallo")
+        let fm = FileManager.init()
+        let doc_path = docURL(for: "auftrag.json")
+        
+        // Prüfen ob das Verzeichnis bereits exisitiert
+        if fm.fileExists(atPath: (doc_path?.absoluteString)!) {
+            do {
+            try fm.removeItem(atPath: (doc_path?.absoluteString)!)
+            } catch {
+                print(error)
+            }
+        }
+       
+        
+        let enc = JSONEncoder()
+        if let url = docURL(for: "auftrag.json")
+        {
+            do {
+                let jsondata = try enc.encode(data)
+                try jsondata.write(to: url)
+                
+            } catch {
+                print(error)
+            }
+        }
         
     }
     
@@ -94,6 +118,17 @@ class VC_AuftragNeu_03_Typ_Datum: UIViewController {
     @IBAction func dpChangeAbzug(_ sender: UIDatePicker) {
         
         auftrag.pickupDate = dpAbzug.date
+    }
+    
+    private static func docURL(for filename: String) -> URL? {
+        
+        //sollte immer genau ein Ergebnis liefern
+        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        
+        if let docDir = urls.first {
+            return docDir.appendingPathComponent(filename)
+        }
+        return nil
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
