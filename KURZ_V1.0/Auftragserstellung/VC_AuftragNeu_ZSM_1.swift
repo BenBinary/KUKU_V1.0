@@ -13,18 +13,18 @@ class VC_AuftragNeu_ZSM_1: UIViewController {
 
     var auftrag = Auftrag()
     
-    @IBOutlet weak var imgStoff: UIImageView!
-    @IBOutlet weak var imgContainer: UIImageView!
-    @IBOutlet weak var lblAnlieferung: UILabel!
-    @IBOutlet weak var lblAuftragstext: UILabel!
-    @IBOutlet weak var lblAbholung: UILabel!
-    @IBOutlet weak var mpStandort: MKMapView!
-    @IBOutlet weak var lblStrasseHsNr: UILabel!
-    @IBOutlet weak var lblAdresszusatz: UILabel!
-    @IBOutlet weak var lblPLZStadt: UILabel!
-    @IBOutlet weak var btnBestaetigen: UIButton!
+    @IBOutlet weak var imgStoff: UIImageView?
+    @IBOutlet weak var imgContainer: UIImageView?
+    @IBOutlet weak var lblAnlieferung: UILabel?
+    @IBOutlet weak var lblAuftragstext: UILabel?
+    @IBOutlet weak var lblAbholung: UILabel?
+    @IBOutlet weak var mpStandort: MKMapView?
+    @IBOutlet weak var lblStrasseHsNr: UILabel?
+    @IBOutlet weak var lblAdresszusatz: UILabel?
+    @IBOutlet weak var lblPLZStadt: UILabel?
+    @IBOutlet weak var btnBestaetigen: UIButton?
     let dateFormatter = DateFormatter()
-    lazy var documentdir = VC_AuftragNeu_ZSM_1.docURL(for: "auftrag.json")
+  
     
     
     override func viewDidLoad() {
@@ -46,73 +46,27 @@ class VC_AuftragNeu_ZSM_1: UIViewController {
         */
         
         // Einlesen / dekodieren der lokalen JSON-Datei
-        let decoder = JSONDecoder.init()
-      
        // let auftrag_file = documentdir.appendingPathComponent("auftrag.json")
-        do {
-            let auftrag_file_content = VC_AuftragNeu_ZSM_1.readArray()
-           let auftrag_file = VC_AuftragNeu_ZSM_1.readArray().first
+   
             
-            lblAnlieferung.text = auftrag_file_content.first?.deliverDate.description
-            lblAbholung.text = auftrag_file_content.first?.pickupDate.description
-             print(auftrag_file_content)
+            let auftrag_file = Auftrag.readAuftrag()
+            
+            lblAnlieferung?.text = "Anlieferung: \(auftrag_file.deliverDate.description)"
+            lblAbholung?.text = "Abholung: \(auftrag_file.pickupDate.description)"
+        
             
             print(auftrag_file)
+            print(auftrag_file.adresszusatz)
+            print(auftrag_file.auftragsNr)
+            print(auftrag_file.billed)
+          //  print(auftrag_file.container)
             
-            lblStrasseHsNr.text = auftrag_file?.strasse.description
-            lblAdresszusatz.text = "\(auftrag_file?.adresszusatz)"
-            lblPLZStadt.text = "\(auftrag_file?.plz) \(auftrag_file?.stadt)"
-            
-        } catch {
-            print(error)
-        }
-   
-        
+            lblStrasseHsNr?.text = "\(auftrag_file.strasse.description) \(auftrag_file.hausnr.description)"
+            lblAdresszusatz?.text = "\(auftrag_file.adresszusatz)"
+            lblPLZStadt?.text = "\(auftrag_file.plz) \(auftrag_file.stadt)"
         
     }
   
-   
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
+ 
     
-    static func readArray() -> [Auftrag] {
-        
-        let dec = JSONDecoder()
-        
-       // let documentdir = getDocumentsDirectory()
-         let auftrag_file = docURL(for: "auftrag.json")
-            do {
-                let jsondata = try Data(contentsOf: auftrag_file!)
-                
-                return try dec.decode([Auftrag].self, from: jsondata)
-            }
-            catch {
-                print(error)
-            }
-        
-             return [Auftrag]()
-        }
-    
-
-
-
-func getDocumentsDirectory() -> URL {
-    let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-    let documentsDirectory = paths[0]
-    return documentsDirectory
-}
-    
-    private static func docURL(for filename: String) -> URL? {
-        
-        //sollte immer genau ein Ergebnis liefern
-        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        
-        if let docDir = urls.first {
-            return docDir.appendingPathComponent(filename)
-        }
-        return nil
-    }
-
 }

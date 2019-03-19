@@ -46,7 +46,7 @@ extension PVC_AuftragNeu_ZSM_1 : UIPageViewControllerDataSource {
         
         let previousIndex = viewControllerIndex - 1
         
-        guard previousIndex >= 0 else { return nil }
+        guard previousIndex >= 0 else { return orderedViewControllers.last }
         
         guard orderedViewControllers.count > previousIndex else { return nil }
         
@@ -65,7 +65,7 @@ extension PVC_AuftragNeu_ZSM_1 : UIPageViewControllerDataSource {
         
         
         guard orderedViewControllersCount != nextIndex else {
-            return nil
+            return orderedViewControllers.first
         }
         
         guard orderedViewControllersCount > nextIndex else {
@@ -86,6 +86,7 @@ extension PVC_AuftragNeu_ZSM_1 : UIPageViewControllerDataSource {
     
     // Aktueller Punkt
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        
         guard let firstViewController = viewControllers?.first, let firstViewControllerIndex = orderedViewControllers.firstIndex(of: firstViewController) else { return 0 }
         
         return firstViewControllerIndex

@@ -48,6 +48,12 @@ class VC_AuftragNeu_03_Typ_Datum: UIViewController {
     
     @IBAction func btnWeiter(_ sender: UIButton) {
         
+        
+        Auftrag.saveAuftrag(auftrag)
+        
+        
+        
+        /*
         // Encodieren im JSON-Format
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
@@ -76,6 +82,8 @@ class VC_AuftragNeu_03_Typ_Datum: UIViewController {
                 print(json_string_auftrag)
             }
         }
+ 
+ */
        
     }
     

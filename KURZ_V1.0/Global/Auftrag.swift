@@ -215,4 +215,75 @@ struct Auftrag : Codable {
     
     
     
+    // Description-Methode
+    public var description: String {
+        
+        
+        return "\(auftragsNr) \(strasse) \(hausnr)"
+        
+    }
+    
+    
+    // Persistente Datenspeicherung mit JSON
+    static func saveAuftrag(_ data: Auftrag) {
+        
+       // if data.count == 0 { return }
+        
+        let enc = JSONEncoder()
+        if let url = docURL(for: "auftrag.json")
+        {
+            do {
+                let jsondata = try enc.encode(data)
+                try jsondata.write(to: url)
+                
+            } catch {
+                print(error)
+            }
+        }
+        
+    }
+    
+    static func readAuftrag() -> Auftrag {
+        
+        let dec = JSONDecoder()
+        
+        // let documentdir = getDocumentsDirectory()
+        let auftrag_file = docURL(for: "auftrag.json")
+        do {
+            let jsondata = try Data(contentsOf: auftrag_file!)
+            
+            return try dec.decode(Auftrag.self, from: jsondata)
+        }
+        catch {
+            print(error)
+        }
+        
+        return Auftrag()
+    }
+    
+    
+    
+    
+    static func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
+    static func docURL(for filename: String) -> URL? {
+        
+        //sollte immer genau ein Ergebnis liefern
+        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        
+        if let docDir = urls.first {
+            return docDir.appendingPathComponent(filename)
+        }
+        return nil
+    }
+    
 }
+
+    
+    
+    
+
