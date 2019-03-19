@@ -230,6 +230,12 @@ struct Auftrag : Codable {
        // if data.count == 0 { return }
         
         let enc = JSONEncoder()
+        
+        
+        //enc.outputFormatting = .prettyPrinted
+        //enc.dateEncodingStrategy = .iso8601
+        
+        
         if let url = docURL(for: "auftrag.json")
         {
             do {
