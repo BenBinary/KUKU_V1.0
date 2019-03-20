@@ -28,6 +28,8 @@ class VC_AuftragNeu_ZSM_1: UIViewController {
     @IBOutlet weak var btnBestaetigen: UIButton?
     let dateFormatter = DateFormatter()
     @IBOutlet weak var txtAuftragstext: UITextView!
+    @IBOutlet weak var btnLastschrift: UIButton!
+    @IBOutlet weak var btnPayPal: UIButton!
     
     
     
@@ -69,6 +71,8 @@ class VC_AuftragNeu_ZSM_1: UIViewController {
             lblAdresszusatz?.text = "\(auftrag.adresszusatz)"
             lblPLZStadt?.text = "\(auftrag.plz) \(auftrag.stadt)"
         
+        
+            if (self.storyboard.)
     }
   
     @IBAction func btnAuftragstext(_ sender: UIButton) {
