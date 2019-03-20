@@ -40,6 +40,9 @@ struct Auftrag : Codable {
     var adresszusatz = ""
     var plz = 0
     var stadt = ""
+    var lastschrift: Bool = false
+    var paypal: Bool = false
+    var auftragstext: String = ""
     
     
     enum CodingKeys : String, CodingKey {

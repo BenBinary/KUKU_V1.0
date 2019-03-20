@@ -11,20 +11,32 @@ import UIKit
 class VC_Bezahlung: UIViewController, UIPopoverPresentationControllerDelegate {
 
     @IBOutlet weak var btnPayPal: UILabel!
+    @IBOutlet weak var viewPayPal: UIView!
+    @IBOutlet weak var viewLastschrift: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        viewLastschrift.isHidden = true
+        viewPayPal.isHidden = false
     }
     
+    @IBAction func btnLastschrift(_ sender: UIButton) {
+        viewLastschrift.isHidden = false
+        viewPayPal.isHidden = true
+        
+        print("Lastschrift")
+        
+        
+    }
     
     @IBAction func btnPayPal(_ sender: UIButton) {
         
-        
-        
+        //viewBezahlung = nibBundle.
+        viewLastschrift.isHidden = true
+        viewPayPal.isHidden = false
        
-        
+        print("PayPal")
     }
     
 

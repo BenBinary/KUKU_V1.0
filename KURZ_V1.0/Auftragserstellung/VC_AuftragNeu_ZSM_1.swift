@@ -24,7 +24,8 @@ class VC_AuftragNeu_ZSM_1: UIViewController {
     @IBOutlet weak var lblPLZStadt: UILabel?
     @IBOutlet weak var btnBestaetigen: UIButton?
     let dateFormatter = DateFormatter()
-  
+    @IBOutlet weak var txtAuftragstext: UITextView!
+    
     
     
     override func viewDidLoad() {
@@ -49,24 +50,37 @@ class VC_AuftragNeu_ZSM_1: UIViewController {
        // let auftrag_file = documentdir.appendingPathComponent("auftrag.json")
    
             
-            let auftrag_file = Auftrag.readAuftrag()
+            let auftrag = Auftrag.readAuftrag()
             
-            lblAnlieferung?.text = "Anlieferung: \(auftrag_file.deliverDate.description)"
-            lblAbholung?.text = "Abholung: \(auftrag_file.pickupDate.description)"
+            lblAnlieferung?.text = "Anlieferung: \(auftrag.deliverDate.description)"
+            lblAbholung?.text = "Abholung: \(auftrag.pickupDate.description)"
         
             
-            print(auftrag_file)
-            print(auftrag_file.adresszusatz)
-            print(auftrag_file.auftragsNr)
-            print(auftrag_file.billed)
+            print(auftrag)
+            print(auftrag.adresszusatz)
+            print(auftrag.auftragsNr)
+            print(auftrag.billed)
           //  print(auftrag_file.container)
             
-            lblStrasseHsNr?.text = "\(auftrag_file.strasse.description) \(auftrag_file.hausnr.description)"
-            lblAdresszusatz?.text = "\(auftrag_file.adresszusatz)"
-            lblPLZStadt?.text = "\(auftrag_file.plz) \(auftrag_file.stadt)"
+            lblStrasseHsNr?.text = "\(auftrag.strasse.description) \(auftrag.hausnr.description)"
+            lblAdresszusatz?.text = "\(auftrag.adresszusatz)"
+            lblPLZStadt?.text = "\(auftrag.plz) \(auftrag.stadt)"
         
     }
   
- 
+    @IBAction func btnAuftragstext(_ sender: UIButton) {
+        
+        auftrag.auftragstext = txtAuftragstext.text
+        
+    }
+    
+    
+    @IBAction func btnBestaetigen(_ sender: UIButton) {
+        
+        Auftrag.saveAuftrag(auftrag)
+        
+    }
+    
+    
     
 }
