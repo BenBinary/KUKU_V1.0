@@ -31,9 +31,9 @@
 		CD1D795A21F0717700B44646 /* VC_AuftragNeu_01_Cont-Stoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795921F0717700B44646 /* VC_AuftragNeu_01_Cont-Stoff.swift */; };
 		CD1D795E21F12E3B00B44646 /* Kunde.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795D21F12E3B00B44646 /* Kunde.swift */; };
 		CD1D796021F12F0700B44646 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1D795F21F12F0700B44646 /* CustomerViewController.swift */; };
-		CD226607224232B100853DF7 /* View_Lastschrift.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD226606224232B100853DF7 /* View_Lastschrift.xib */; };
 		CD22660922423EE000853DF7 /* VIEW_Bezahlmethode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22660822423EE000853DF7 /* VIEW_Bezahlmethode.swift */; };
 		CD22664B2242753700853DF7 /* Lastschrift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22664A2242753700853DF7 /* Lastschrift.swift */; };
+		CD22664D2242785D00853DF7 /* VC_Lastschrift_II.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22664C2242785D00853DF7 /* VC_Lastschrift_II.swift */; };
 		CD2D73F222293A7700E014E8 /* auftragsZelle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D73F122293A7700E014E8 /* auftragsZelle.swift */; };
 		CD2D746A22296BFF00E014E8 /* auftragDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D746922296BFF00E014E8 /* auftragDetailVC.swift */; };
 		CD2D746F22296FDD00E014E8 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D746E22296FDD00E014E8 /* Container.swift */; };
@@ -102,9 +102,9 @@
 		CD1D795921F0717700B44646 /* VC_AuftragNeu_01_Cont-Stoff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC_AuftragNeu_01_Cont-Stoff.swift"; sourceTree = "<group>"; };
 		CD1D795D21F12E3B00B44646 /* Kunde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kunde.swift; sourceTree = "<group>"; };
 		CD1D795F21F12F0700B44646 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
-		CD226606224232B100853DF7 /* View_Lastschrift.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View_Lastschrift.xib; sourceTree = "<group>"; };
 		CD22660822423EE000853DF7 /* VIEW_Bezahlmethode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIEW_Bezahlmethode.swift; sourceTree = "<group>"; };
 		CD22664A2242753700853DF7 /* Lastschrift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lastschrift.swift; sourceTree = "<group>"; };
+		CD22664C2242785D00853DF7 /* VC_Lastschrift_II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Lastschrift_II.swift; sourceTree = "<group>"; };
 		CD2D73F122293A7700E014E8 /* auftragsZelle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftragsZelle.swift; sourceTree = "<group>"; };
 		CD2D746922296BFF00E014E8 /* auftragDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auftragDetailVC.swift; sourceTree = "<group>"; };
 		CD2D746E22296FDD00E014E8 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
@@ -260,8 +260,8 @@
 				CDC8C94E223678CF00F67381 /* VC_Lastschrift.swift */,
 				CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */,
 				CDC8C9522236910900F67381 /* VC_VISA.swift */,
-				CD226606224232B100853DF7 /* View_Lastschrift.xib */,
 				CD22664A2242753700853DF7 /* Lastschrift.swift */,
+				CD22664C2242785D00853DF7 /* VC_Lastschrift_II.swift */,
 			);
 			path = Bezahlung;
 			sourceTree = "<group>";
@@ -430,7 +430,6 @@
 				CD04AA4A2181B2FD00D019FC /* Assets.xcassets in Resources */,
 				CD04AA482181B2FC00D019FC /* Main.storyboard in Resources */,
 				CDDC87332239464B0026D741 /* stoffAuswahl.xib in Resources */,
-				CD226607224232B100853DF7 /* View_Lastschrift.xib in Resources */,
 				CD04AA732181C17400D019FC /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +485,7 @@
 				CD9491BE2239041F0013E297 /* VC_AuftragNeu_ZSM_1.swift in Sources */,
 				CD2D746F22296FDD00E014E8 /* Container.swift in Sources */,
 				CDC8C95122368A9F00F67381 /* VC_Kreditkarte.swift in Sources */,
+				CD22664D2242785D00853DF7 /* VC_Lastschrift_II.swift in Sources */,
 				CD9491C0223908360013E297 /* Auftragstyp.swift in Sources */,
 				CD6474902229991C00A74F09 /* Auftrag.swift in Sources */,
 				CD0CCD262237F6BA004BD246 /* Stoff.swift in Sources */,

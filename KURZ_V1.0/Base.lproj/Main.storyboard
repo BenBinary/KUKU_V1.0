@@ -1632,7 +1632,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTc-fv-Kva">
-                                <rect key="frame" x="47" y="156" width="219" height="30"/>
+                                <rect key="frame" x="45" y="85" width="219" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Auftragstext">
@@ -1640,7 +1640,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="### Auftragstext ###" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPv-h1-NgY">
-                                <rect key="frame" x="50" y="194" width="219" height="21"/>
+                                <rect key="frame" x="48" y="123" width="219" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1658,6 +1658,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Lastschrift"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIU-0s-JxW">
+                                <rect key="frame" x="168" y="326" width="46" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="PayPal"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO6-N0-oKq">
                                 <rect key="frame" x="56" y="513" width="210" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1668,11 +1673,13 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIU-0s-JxW">
-                                <rect key="frame" x="168" y="326" width="46" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7H-UJ-DNf">
+                                <rect key="frame" x="45" y="199" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="PayPal"/>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.80417478239999995" green="0.43417733860000002" blue="0.04650801056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="ozy-Q3-PbP"/>
@@ -1682,16 +1689,16 @@
             </objects>
             <point key="canvasLocation" x="7616.25" y="-381.33802816901408"/>
         </scene>
-        <!--View Controller-->
+        <!--LastschriftII-->
         <scene sceneID="2HU-IC-ddS">
             <objects>
-                <viewController storyboardIdentifier="VC_Lastscrhift" id="b7Z-x1-yyZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC_Lastscrhift" id="b7Z-x1-yyZ" customClass="VC_Lastschrift_II" customModule="KUKU_V1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="koy-S0-j7K">
                         <rect key="frame" x="0.0" y="0.0" width="260" height="211"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kontoinhaber" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="doR-qL-ObM">
-                                <rect key="frame" x="22" y="20" width="222" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vorname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="doR-qL-ObM">
+                                <rect key="frame" x="22" y="20" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1715,15 +1722,32 @@
                                 <rect key="frame" x="22" y="161" width="222" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Lastschrift verwenden"/>
+                                <connections>
+                                    <action selector="btnLastschriftVerwenden:" destination="b7Z-x1-yyZ" eventType="touchUpInside" id="QeG-Eb-KH0"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nachname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jXL-Aq-NLU">
+                                <rect key="frame" x="131" y="20" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="260" height="215"/>
+                    <connections>
+                        <outlet property="btnLastschriftVerwenden" destination="lWo-xe-8Ko" id="uzY-O6-54G"/>
+                        <outlet property="txtBIC" destination="uae-l4-eSo" id="I13-V9-boK"/>
+                        <outlet property="txtIBAN" destination="Dxy-fG-HV4" id="Nty-Bq-Tg4"/>
+                        <outlet property="txtNachname" destination="jXL-Aq-NLU" id="8tn-IT-IXh"/>
+                        <outlet property="txtVorname" destination="doR-qL-ObM" id="bsd-jB-4zR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULT-DU-Nlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5769" y="1080"/>
+            <point key="canvasLocation" x="5767.5" y="1077.9929577464789"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1X9-KL-xHu">

@@ -13,6 +13,9 @@ class VC_AuftragNeu_ZSM_1: UIViewController {
 
     var auftrag = Auftrag()
     
+    
+    
+    // Erste Zusammenfassung
     @IBOutlet weak var imgStoff: UIImageView?
     @IBOutlet weak var imgContainer: UIImageView?
     @IBOutlet weak var lblAnlieferung: UILabel?
