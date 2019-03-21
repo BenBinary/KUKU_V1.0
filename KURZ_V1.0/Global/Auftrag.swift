@@ -44,11 +44,16 @@ struct Auftrag : Codable {
     var paypal: Bool = false
     var auftragstext: String = ""
     
+    // Standort
+    var lat : Double = 0.0
+    var long : Double = 0.0
+    
+    
     
     enum CodingKeys : String, CodingKey {
         
         
-        case index, auftragsNr, payed, billed, orderDate, deliverDate, pickupDate, container, strasse, hausnr, adresszusatz, plz, stadt
+        case index, auftragsNr, payed, billed, orderDate, deliverDate, pickupDate, container, strasse, hausnr, adresszusatz, plz, stadt, paypal, lastschrift, lat, long
     }
     
     init() {
@@ -88,9 +93,16 @@ struct Auftrag : Codable {
             let adresszusatz: String = try container.decode(String.self, forKey: .adresszusatz)
             let plz: Int = try container.decode(Int.self, forKey: .plz)
             let stadt: String = try container.decode(String.self, forKey: .stadt)
+            let paypal: Bool = try container.decode(Bool.self, forKey: .paypal)
+            let lastschrift: Bool = try container.decode(Bool.self, forKey: .lastschrift)
+            let long: Double = try container.decode(Double.self, forKey: .long)
+            let lat: Double = try container.decode(Double.self, forKey: .lat)
             
             
-            self.init(kunde: Kunde(), datum: Date(), payed: false, delivered: false, deliverdate: deliverDate, pickupdate: pickupDate, strasse: strasse, hausnr: hausnr, adresszusatz: adresszusatz, plz: plz, stadt: stadt)
+            //self.init(kunde: Kunde(), datum: Date(), payed: false, delivered: false, deliverdate: deliverDate, pickupdate: pickupDate, strasse: strasse, hausnr: hausnr, adresszusatz: adresszusatz, plz: plz, stadt: stadt)
+            //self.init(kunde: Kunde(), datum: Date(), payed: false, delivered: false, deliverdate: deliverDate, pickupdate: pickupDate, strasse: strasse, hausnr: hausnr, adresszusatz: adresszusatz, plz: plz, stadt: stadt, paypal: paypal, lastschrift: lastschrift)
+            self.init(kunde: Kunde(), datum: Date(), payed: false, delivered: false, deliverdate: deliverDate, pickupdate: pickupDate, strasse: strasse, hausnr: hausnr, adresszusatz: adresszusatz, plz: plz, stadt: stadt, paypal: paypal, lastschrift: lastschrift, lat: lat, long: long)
+            
             
         } catch {
             print(error)
@@ -118,6 +130,10 @@ struct Auftrag : Codable {
             try container.encode(adresszusatz, forKey: .adresszusatz)
             try container.encode(plz, forKey: .plz)
             try container.encode(stadt, forKey: .stadt)
+            try container.encode(lastschrift, forKey: .lastschrift)
+            try container.encode(paypal, forKey: .paypal)
+            try container.encode(lat, forKey: .lat)
+            try container.encode(long, forKey: .long)
             
         } catch {
             print(error)
@@ -183,6 +199,68 @@ struct Auftrag : Codable {
         price = 0.0
     }
     
+    
+    init(kunde : Kunde, datum : Date, payed : Bool, delivered : Bool, deliverdate : Date, pickupdate : Date, strasse : String, hausnr : Int, adresszusatz : String, plz : Int, stadt : String, paypal : Bool, lastschrift : Bool) {
+        
+        // Auftragsnummer hinzufügen
+        Auftrag.index = Auftrag.index + 1
+        auftragsNr = Auftrag.index
+        
+        self.kunde = kunde
+        self.orderDate = datum
+        //        self.payed = false
+        //        self.payed = payed
+        //        self.delivered = false
+        //        self.delivered = delivered
+        
+        
+        self.deliverDate = deliverdate
+        self.pickupDate = pickupdate
+        self.strasse = strasse
+        self.hausnr = hausnr
+        self.adresszusatz = adresszusatz
+        self.plz = plz
+        self.stadt = stadt
+        self.paypal = paypal
+        self.lastschrift = lastschrift
+        
+        
+        typ = Auftragstyp.Anlieferung
+        container = Container()
+        price = 0.0
+    }
+    
+    init(kunde : Kunde, datum : Date, payed : Bool, delivered : Bool, deliverdate : Date, pickupdate : Date, strasse : String, hausnr : Int, adresszusatz : String, plz : Int, stadt : String, paypal : Bool, lastschrift : Bool, lat : Double, long : Double) {
+        
+        // Auftragsnummer hinzufügen
+        Auftrag.index = Auftrag.index + 1
+        auftragsNr = Auftrag.index
+        
+        self.kunde = kunde
+        self.orderDate = datum
+        //        self.payed = false
+        //        self.payed = payed
+        //        self.delivered = false
+        //        self.delivered = delivered
+        
+        
+        self.deliverDate = deliverdate
+        self.pickupDate = pickupdate
+        self.strasse = strasse
+        self.hausnr = hausnr
+        self.adresszusatz = adresszusatz
+        self.plz = plz
+        self.stadt = stadt
+        self.paypal = paypal
+        self.lastschrift = lastschrift
+        self.lat = lat
+        self.long = long
+        
+        
+        typ = Auftragstyp.Anlieferung
+        container = Container()
+        price = 0.0
+    }
     
     func setContainer(for : Container) {
         

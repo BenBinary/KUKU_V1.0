@@ -72,7 +72,7 @@ class VC_AuftragNeu_ZSM_1: UIViewController {
             lblPLZStadt?.text = "\(auftrag.plz) \(auftrag.stadt)"
         
         
-            if (self.storyboard.)
+        
     }
   
     @IBAction func btnAuftragstext(_ sender: UIButton) {

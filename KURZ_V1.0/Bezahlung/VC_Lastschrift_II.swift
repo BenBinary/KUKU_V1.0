@@ -25,7 +25,7 @@ class VC_Lastschrift_II: UIViewController {
         // Validieren der IBAN
         
         // Check BIC-Methode und checkName fehlen noch
-        if (Lastschrift.checkIBAN(iban: txtIBAN.text ?? "")) == true  {
+    //    if (Lastschrift.checkIBAN(iban: txtIBAN.text ?? "")) == true  {
             
             lastschrift.iban = txtIBAN.text!
             lastschrift.bic = txtBIC.text ?? ""
@@ -41,12 +41,25 @@ class VC_Lastschrift_II: UIViewController {
             
             // Persistente Speicherung der Lastschrift-Eigenschaften
             Lastschrift.saveLastschrift(lastschrift)
+        
+            print("Lastschrift wurde gespeichert")
+        
+        
+        
+        print(lastschrift)
+        print("Hierbei wird die Lastschrift eingelesen \(Lastschrift.readLastschrift())")
+        
+        
+        print("View_lastschrift benutzen der Lastschrift \(Auftrag.readAuftrag().lastschrift)")
+        
+        
+        
+        print("View_lastschrift benutzen von PayPal \(Auftrag.readAuftrag().paypal)")
             
+        //  } else {
             
-        } else {
-            
-            print("Bitte die IBAN überprüfen")
-        }
+        //   print("Bitte die IBAN überprüfen")
+        // }
         
         
         

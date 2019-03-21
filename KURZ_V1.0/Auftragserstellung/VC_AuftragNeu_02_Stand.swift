@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class VC_AuftragNeu_02_Stand: UIViewController {
+class VC_AuftragNeu_02_Stand: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
     
     // Attribute
@@ -23,7 +23,14 @@ class VC_AuftragNeu_02_Stand: UIViewController {
     @IBOutlet weak var txtPLZ: UITextField!
     @IBOutlet weak var txtStadt: UITextField!
     
+    @IBOutlet weak var lblKoordinaten: UILabel!
     @IBOutlet weak var txtAdresszusatz: UITextField!
+    
+    
+    // Standorte hinzufügen
+    var locmgr:CLLocationManager!               // Location Manager
+    var coords:[CLLocationCoordinate2D] = []    // Array für Posiononen
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +46,45 @@ class VC_AuftragNeu_02_Stand: UIViewController {
         txtPLZ.text = String(auftrag.container.plz)
         txtStrasse.text = auftrag.container.strasse
 
+        // Location-Manager initialisieren
+        locmgr = CLLocationManager()
+        locmgr.delegate = self
+        locmgr.desiredAccuracy = kCLLocationAccuracyBest
+        locmgr.requestAlwaysAuthorization()
+        locmgr.startUpdatingLocation()
+        mapStandort.delegate = self
+        
+
+        lblKoordinaten.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        for loc in locations {
+            
+            lblKoordinaten.text = "Long: \(String(format: "%.5f", loc.coordinate.longitude))°  Lat: \(String(format: "%.5f", loc.coordinate.latitude))°"
+            
+            // Kartenausschnitt setzen
+            let span = 0.09
+            let reg = MKCoordinateRegion(center: mapStandort.userLocation.coordinate, latitudinalMeters: span, longitudinalMeters: span)
+            mapStandort.setRegion(reg, animated: false)
+            
+            // Hinzufügen der Koordinaten zum Array
+            coords.append(loc.coordinate)
+            
+            // Eingabe der Koordinaten sobald es fünf davon gibt
+            if (coords.count > 10) {
+                
+                
+                auftrag.long = loc.coordinate.longitude
+                auftrag.lat = loc.coordinate.latitude
+                
+                break
+                
+            }
+            
+        }
         
     }
     

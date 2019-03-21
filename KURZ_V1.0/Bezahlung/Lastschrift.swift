@@ -50,7 +50,6 @@ struct Lastschrift : Codable {
         
     }
     
-    
     // Speichern des Objekts als JSON-Objekt
     static func saveLastschrift(_ data: Lastschrift) {
         
@@ -89,6 +88,7 @@ struct Lastschrift : Codable {
         }
         catch {
             print(error)
+            //return nil
         }
         
         return Lastschrift()
