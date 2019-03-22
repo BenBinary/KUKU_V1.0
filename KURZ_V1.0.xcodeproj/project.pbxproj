@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0413342155F3F4DAAAF1EF5E /* Pods_KUKU_V1_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CCFF373E6AD3CCCF78366B /* Pods_KUKU_V1_0.framework */; };
+		55C4B0B0CB13B2DD5078A7D2 /* Pods_KUKU_V1_0UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7CFDDCCEEB2230EA258BD9 /* Pods_KUKU_V1_0UITests.framework */; };
+		5CACCBE28878B4D6CECC18C5 /* Pods_KUKU_V1_0Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477701B1356D3A6FB07F1F35 /* Pods_KUKU_V1_0Tests.framework */; };
 		CD04AA3F2181B2FC00D019FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04AA3E2181B2FC00D019FC /* AppDelegate.swift */; };
 		CD04AA412181B2FC00D019FC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04AA402181B2FC00D019FC /* RootViewController.swift */; };
 		CD04AA432181B2FC00D019FC /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04AA422181B2FC00D019FC /* DataViewController.swift */; };
@@ -74,6 +77,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15AECDFCDAE2726D944F8424 /* Pods-KUKU_V1.0UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KUKU_V1.0UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KUKU_V1.0UITests/Pods-KUKU_V1.0UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		189700AE52F3ACADD95BEB18 /* Pods-KUKU_V1.0Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KUKU_V1.0Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KUKU_V1.0Tests/Pods-KUKU_V1.0Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		26B80C7B849A696ABF31647F /* Pods-KUKU_V1.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KUKU_V1.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-KUKU_V1.0/Pods-KUKU_V1.0.release.xcconfig"; sourceTree = "<group>"; };
+		336F91A80B978A94459FB150 /* Pods-KUKU_V1.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KUKU_V1.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KUKU_V1.0/Pods-KUKU_V1.0.debug.xcconfig"; sourceTree = "<group>"; };
+		477701B1356D3A6FB07F1F35 /* Pods_KUKU_V1_0Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KUKU_V1_0Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CCFF373E6AD3CCCF78366B /* Pods_KUKU_V1_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KUKU_V1_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E6431E97FA551BA3441F83D /* Pods-KUKU_V1.0Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KUKU_V1.0Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KUKU_V1.0Tests/Pods-KUKU_V1.0Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CD04AA3B2181B2FC00D019FC /* KUKU_V1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KUKU_V1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD04AA3E2181B2FC00D019FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD04AA402181B2FC00D019FC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +138,8 @@
 		CDDC872D223933B10026D741 /* KUKU_V1.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KUKU_V1.0.entitlements; sourceTree = "<group>"; };
 		CDDC87322239464B0026D741 /* stoffAuswahl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = stoffAuswahl.xib; sourceTree = "<group>"; };
 		CDDC87342239471D0026D741 /* stoffAuswahl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stoffAuswahl.swift; sourceTree = "<group>"; };
+		CE7CFDDCCEEB2230EA258BD9 /* Pods_KUKU_V1_0UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KUKU_V1_0UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD8101F71F758177141EED13 /* Pods-KUKU_V1.0UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KUKU_V1.0UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KUKU_V1.0UITests/Pods-KUKU_V1.0UITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDDC872C22391A160026D741 /* MapKit.framework in Frameworks */,
+				0413342155F3F4DAAAF1EF5E /* Pods_KUKU_V1_0.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CACCBE28878B4D6CECC18C5 /* Pods_KUKU_V1_0Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,12 +164,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C4B0B0CB13B2DD5078A7D2 /* Pods_KUKU_V1_0UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CC0EF2EBCD5D89AD0E13567 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				336F91A80B978A94459FB150 /* Pods-KUKU_V1.0.debug.xcconfig */,
+				26B80C7B849A696ABF31647F /* Pods-KUKU_V1.0.release.xcconfig */,
+				189700AE52F3ACADD95BEB18 /* Pods-KUKU_V1.0Tests.debug.xcconfig */,
+				8E6431E97FA551BA3441F83D /* Pods-KUKU_V1.0Tests.release.xcconfig */,
+				15AECDFCDAE2726D944F8424 /* Pods-KUKU_V1.0UITests.debug.xcconfig */,
+				DD8101F71F758177141EED13 /* Pods-KUKU_V1.0UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CD04AA322181B2FC00D019FC = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +193,7 @@
 				CD04AA612181B2FD00D019FC /* KURZ_V1.0UITests */,
 				CD04AA3C2181B2FC00D019FC /* Products */,
 				CD2D746B22296DE500E014E8 /* Frameworks */,
+				5CC0EF2EBCD5D89AD0E13567 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -274,6 +303,9 @@
 			isa = PBXGroup;
 			children = (
 				CDDC872B22391A160026D741 /* MapKit.framework */,
+				75CCFF373E6AD3CCCF78366B /* Pods_KUKU_V1_0.framework */,
+				477701B1356D3A6FB07F1F35 /* Pods_KUKU_V1_0Tests.framework */,
+				CE7CFDDCCEEB2230EA258BD9 /* Pods_KUKU_V1_0UITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -319,9 +351,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD04AA672181B2FD00D019FC /* Build configuration list for PBXNativeTarget "KUKU_V1.0" */;
 			buildPhases = (
+				19BA033292BD7204D0E64CF5 /* [CP] Check Pods Manifest.lock */,
 				CD04AA372181B2FC00D019FC /* Sources */,
 				CD04AA382181B2FC00D019FC /* Frameworks */,
 				CD04AA392181B2FC00D019FC /* Resources */,
+				68E965DAC5010E24E35444A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -336,6 +370,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD04AA6A2181B2FD00D019FC /* Build configuration list for PBXNativeTarget "KUKU_V1.0Tests" */;
 			buildPhases = (
+				FB795DB7B386FD8C9FD83A53 /* [CP] Check Pods Manifest.lock */,
 				CD04AA4F2181B2FD00D019FC /* Sources */,
 				CD04AA502181B2FD00D019FC /* Frameworks */,
 				CD04AA512181B2FD00D019FC /* Resources */,
@@ -354,6 +389,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD04AA6D2181B2FD00D019FC /* Build configuration list for PBXNativeTarget "KUKU_V1.0UITests" */;
 			buildPhases = (
+				05DA479C2B474EC462E628DF /* [CP] Check Pods Manifest.lock */,
 				CD04AA5A2181B2FD00D019FC /* Sources */,
 				CD04AA5B2181B2FD00D019FC /* Frameworks */,
 				CD04AA5C2181B2FD00D019FC /* Resources */,
@@ -458,6 +494,83 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05DA479C2B474EC462E628DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KUKU_V1.0UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19BA033292BD7204D0E64CF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KUKU_V1.0-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68E965DAC5010E24E35444A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KUKU_V1.0/Pods-KUKU_V1.0-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Braintree/Braintree.framework",
+				"${BUILT_PRODUCTS_DIR}/BraintreeDropIn/BraintreeDropIn.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Braintree.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BraintreeDropIn.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KUKU_V1.0/Pods-KUKU_V1.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB795DB7B386FD8C9FD83A53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KUKU_V1.0Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD04AA372181B2FC00D019FC /* Sources */ = {
@@ -673,6 +786,7 @@
 		};
 		CD04AA682181B2FD00D019FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 336F91A80B978A94459FB150 /* Pods-KUKU_V1.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -695,6 +809,7 @@
 		};
 		CD04AA692181B2FD00D019FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B80C7B849A696ABF31647F /* Pods-KUKU_V1.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -717,6 +832,7 @@
 		};
 		CD04AA6B2181B2FD00D019FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 189700AE52F3ACADD95BEB18 /* Pods-KUKU_V1.0Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -738,6 +854,7 @@
 		};
 		CD04AA6C2181B2FD00D019FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E6431E97FA551BA3441F83D /* Pods-KUKU_V1.0Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -759,6 +876,7 @@
 		};
 		CD04AA6E2181B2FD00D019FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15AECDFCDAE2726D944F8424 /* Pods-KUKU_V1.0UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -779,6 +897,7 @@
 		};
 		CD04AA6F2181B2FD00D019FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD8101F71F758177141EED13 /* Pods-KUKU_V1.0UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
