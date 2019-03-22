@@ -20,7 +20,7 @@ class VC_AuftragNeu_ZSM_1: UIViewController {
     @IBOutlet weak var lblAnlieferung: UILabel?
     @IBOutlet weak var lblAuftragstext: UILabel?
     @IBOutlet weak var lblAbholung: UILabel?
-    @IBOutlet weak var mapStandort: MKMapView!
+    @IBOutlet weak var mapStandort: MKMapView?
     @IBOutlet weak var lblStrasseHsNr: UILabel?
     @IBOutlet weak var lblAdresszusatz: UILabel?
     @IBOutlet weak var lblPLZStadt: UILabel?
@@ -52,9 +52,12 @@ class VC_AuftragNeu_ZSM_1: UIViewController {
         // Standort - Map
         let regionRadius: CLLocationDistance = 10.0
         standort = CLLocation(latitude: auftrag.lat, longitude: auftrag.long)
-        let region = MKCoordinateRegion(center: standort.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+   
         
-            //mapStandort.setRegion(region, animated: false)
+            let region = MKCoordinateRegion(center: standort.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+           mapStandort?.setRegion(region, animated: false)
+            
+    
             //mapStandort.delegate = self
             lblPosition?.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         

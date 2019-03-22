@@ -374,6 +374,9 @@
 		CD04AA332181B2FC00D019FC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					"https://br.freepik.com/icones-gratis/carta_887042.htm",
+				);
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Benedikt Kurz";

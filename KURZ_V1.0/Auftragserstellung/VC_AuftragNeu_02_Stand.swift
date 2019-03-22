@@ -35,6 +35,9 @@ class VC_AuftragNeu_02_Stand: UIViewController, CLLocationManagerDelegate, MKMap
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        print("Standort View")
+        
         // Setzen des aktuellen Standortes
         mapStandort.showsUserLocation = true
         auftrag.container.coords = [mapStandort.userLocation.coordinate]
@@ -69,12 +72,23 @@ class VC_AuftragNeu_02_Stand: UIViewController, CLLocationManagerDelegate, MKMap
         //auftrag.lat = standort.coordinate.latitude
         
         
-        
+        print("Standort des Benutzers \(mapStandort.userLocation.coordinate)")
         
     }
     
     
+    func locationManager(_ manager: CLLocationManager, didVisit visit: CLVisit) {
+        print("didVisit Locaiton Mangager")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        print("Did updating heading")
+    }
+    
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        print("Location Manager")
         
         for loc in locations {
             
@@ -88,12 +102,12 @@ class VC_AuftragNeu_02_Stand: UIViewController, CLLocationManagerDelegate, MKMap
             // Hinzufügen der Koordinaten zum Array
             coords.append(loc.coordinate)
             
-            print(loc.coordinate.longitude)
-            print(loc.coordinate.latitude)
+            //print(loc.coordinate.longitude)
+            //print(loc.coordinate.latitude)
             auftrag.long = loc.coordinate.longitude
             auftrag.lat = loc.coordinate.latitude
             
-            Auftrag.saveAuftrag(auftrag)
+            //Auftrag.saveAuftrag(auftrag)
 
             // Eingabe der Koordinaten sobald es fünf davon gibt
             if (coords.count > 2) {
@@ -106,8 +120,8 @@ class VC_AuftragNeu_02_Stand: UIViewController, CLLocationManagerDelegate, MKMap
                 var standort : CLLocation?
                 standort = mapStandort.userLocation.location
                 
-                print(standort?.coordinate.longitude)
-                print(standort?.coordinate.latitude)
+               // print(standort?.coordinate.longitude)
+                //print(standort?.coordinate.latitude)
                 //break
                 
             }
