@@ -56,6 +56,21 @@ class VC_AuftragNeu_02_Stand: UIViewController, CLLocationManagerDelegate, MKMap
         
 
         lblKoordinaten.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        
+        
+        auftrag = Auftrag.readAuftrag()
+      
+        
+      
+        
+        //auftrag.long = (standort?.coordinate.longitude)
+        //print(auftrag.long)
+        //auftrag.lat = standort.coordinate.latitude
+        
+        
+        
+        
     }
     
     
@@ -73,16 +88,30 @@ class VC_AuftragNeu_02_Stand: UIViewController, CLLocationManagerDelegate, MKMap
             // Hinzufügen der Koordinaten zum Array
             coords.append(loc.coordinate)
             
+            print(loc.coordinate.longitude)
+            print(loc.coordinate.latitude)
+            auftrag.long = loc.coordinate.longitude
+            auftrag.lat = loc.coordinate.latitude
+            
+            Auftrag.saveAuftrag(auftrag)
+
             // Eingabe der Koordinaten sobald es fünf davon gibt
-            if (coords.count > 10) {
+            if (coords.count > 2) {
                 
                 
                 auftrag.long = loc.coordinate.longitude
                 auftrag.lat = loc.coordinate.latitude
                 
-                break
+                // Standort Optional
+                var standort : CLLocation?
+                standort = mapStandort.userLocation.location
+                
+                print(standort?.coordinate.longitude)
+                print(standort?.coordinate.latitude)
+                //break
                 
             }
+            
             
         }
         

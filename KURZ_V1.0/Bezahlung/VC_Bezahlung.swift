@@ -10,6 +10,7 @@ import UIKit
 
 class VC_Bezahlung: UIViewController, UIPopoverPresentationControllerDelegate {
 
+    @IBOutlet weak var btnLastschrift: UIButton!
     @IBOutlet weak var btnPayPal: UILabel!
     @IBOutlet weak var viewPayPal: UIView!
     @IBOutlet weak var viewLastschrift: UIView!
@@ -19,6 +20,10 @@ class VC_Bezahlung: UIViewController, UIPopoverPresentationControllerDelegate {
 
         viewLastschrift.isHidden = true
         viewPayPal.isHidden = false
+        
+        //btnPayPal.contentMode = .scaleAspectFit
+        //btnLastschrift.contentMode = .scaleAspectFit
+        
     }
     
     @IBAction func btnLastschrift(_ sender: UIButton) {
