@@ -704,7 +704,7 @@
                                 <rect key="frame" x="22" y="93" width="282" height="411"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="69" id="gh6-eZ-DtE" customClass="auftragsZelle" customModule="KUKU_V1_0" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ProtoCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProtoCell" rowHeight="69" id="gh6-eZ-DtE" customClass="auftragsZelle" customModule="KUKU_V1_0" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="282" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gh6-eZ-DtE" id="IaT-KG-CeW">
@@ -765,12 +765,11 @@
                     <navigationItem key="navigationItem" id="d9y-VQ-4xR"/>
                     <connections>
                         <outlet property="table" destination="LKb-Gx-9s9" id="pLz-Oh-BND"/>
-                        <outlet property="tableView" destination="LKb-Gx-9s9" id="7NF-B7-ONr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LgM-LY-orB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-926.25" y="1451.4084507042253"/>
+            <point key="canvasLocation" x="-741" y="1445"/>
         </scene>
         <!--Auftrag DetailVC-->
         <scene sceneID="wlO-6R-Gxy">
@@ -838,7 +837,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqi-4C-Zcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-189.375" y="1447.1830985915494"/>
+            <point key="canvasLocation" x="124" y="1446"/>
         </scene>
         <!--Popup Waste View Controller-->
         <scene sceneID="NKV-ye-dea">

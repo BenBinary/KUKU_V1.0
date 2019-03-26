@@ -10,6 +10,9 @@ import UIKit
 import MapKit
 
 class auftragDetailVC: UIViewController {
+    
+    
+    var data:Auftrag!
 
     @IBOutlet weak var lblTitel: UILabel!
     @IBOutlet weak var imgState: UIImageView!

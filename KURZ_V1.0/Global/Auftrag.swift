@@ -281,7 +281,7 @@ struct Auftrag : Codable {
     }
     
     
-    func getAuftraege() -> [Auftrag] {
+    static func getAuftraege() -> [Auftrag] {
         var auftraege  = Array<Auftrag>()
         
         auftraege.append(Auftrag(kunde: Kunde(vorname: "Monika", nachname: "Heilmann"), datum: Date(), payed: false, delivered: false))
