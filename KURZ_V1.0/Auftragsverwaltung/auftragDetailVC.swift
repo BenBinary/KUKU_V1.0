@@ -11,7 +11,7 @@ import MapKit
 
 class auftragDetailVC: UIViewController {
     
-    
+    let regionRadius: CLLocationDistance = 1000
     var data:Auftrag!
 
     @IBOutlet weak var lblTitel: UILabel!
@@ -22,6 +22,7 @@ class auftragDetailVC: UIViewController {
     @IBOutlet weak var lblStoff: UILabel!
     @IBOutlet weak var btnSaveChanges: UIButton!
     @IBOutlet weak var lblKunde: UILabel!
+    @IBOutlet weak var lblStandort: UILabel!
     
     
     override func viewDidLoad() {
@@ -40,8 +41,29 @@ class auftragDetailVC: UIViewController {
             lblKunde.text = "Kunde: \(cust.getVorname()) \(cust.getNachname())"
         }
         
+        // Standort Container
+        let initialLocation = CLLocation(latitude: data.lat, longitude: data.long)
         
+        let initialLocation_2 = CLLocationCoordinate2D(latitude: data.lat, longitude: data.long)
+        
+        centerMapOnLocation(location: initialLocation)
+        
+        let artwork = ContainerArtwork(title: data.containerTyp.rawValue, locationName: "T##String", discipline: "Container", coordinate: initialLocation_2)
+        
+        
+        mapPlace.addAnnotation(artwork)
+        
+        lblStandort.text = "\(data.lat) \(data.long)"
     
+        
+    }
+    
+    func centerMapOnLocation(location: CLLocation)  {
+        
+        let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        
+        mapPlace.setRegion(coordinateRegion, animated: true)
+        
         
     }
     

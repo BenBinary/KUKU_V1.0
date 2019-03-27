@@ -8,7 +8,7 @@
 
 import Foundation
 import CoreLocation
-
+import MapKit
 
 struct Container : Codable {
     
@@ -19,6 +19,8 @@ struct Container : Codable {
      *  These types include standard library types like String, Int, and Double; and Foundation types like Date, Data, and URL
      *
      */
+    
+
     
     var uvv_faellig : Bool
     var uvv_letzte : Date
@@ -43,8 +45,7 @@ struct Container : Codable {
         case uvv_faellig, uvv_letzte, deckel, groesse, loc_lat, loc_long, strasse, hausnr, plz, stadt, adresszusatz
         
     }
-    
-    
+
     
     
     func encode(to encoder: Encoder) throws {

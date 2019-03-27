@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8D-8m-Mhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821" y="-921"/>
+            <point key="canvasLocation" x="3146.25" y="-831.33802816901414"/>
         </scene>
         <!--Customer View Controller-->
         <scene sceneID="xWy-xK-JxU">
@@ -779,10 +779,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejC-Bh-dsv">
-                                <rect key="frame" x="30" y="476" width="264" height="30"/>
-                                <state key="normal" title="Änderungen übernehmen"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Auftrag vom " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zak-4G-WTh">
                                 <rect key="frame" x="23" y="103" width="227" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -805,6 +801,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejC-Bh-dsv">
+                                <rect key="frame" x="30" y="476" width="264" height="30"/>
+                                <state key="normal" title="Änderungen übernehmen"/>
+                            </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OZG-2t-kr5">
                                 <rect key="frame" x="174" y="153" width="130" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -823,6 +823,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lat: / Long:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXG-FW-DJK">
+                                <rect key="frame" x="174" y="272" width="130" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -838,6 +845,7 @@
                         <outlet property="imgState" destination="Gcp-Fx-XlC" id="6K1-6B-N2K"/>
                         <outlet property="lblDatum" destination="98X-dC-1xQ" id="Jia-J3-LNC"/>
                         <outlet property="lblKunde" destination="DNg-sf-9T5" id="LJl-Wf-P7A"/>
+                        <outlet property="lblStandort" destination="WXG-FW-DJK" id="fz6-o3-m1D"/>
                         <outlet property="lblStoff" destination="UjW-4s-93A" id="idk-yd-hXX"/>
                         <outlet property="lblTitel" destination="zak-4G-WTh" id="NfA-5Q-ndC"/>
                         <outlet property="mapPlace" destination="OZG-2t-kr5" id="Whj-e3-Evf"/>
@@ -1295,49 +1303,159 @@
             </objects>
             <point key="canvasLocation" x="-2261.25" y="-921.12676056338034"/>
         </scene>
+        <!--About-->
+        <scene sceneID="BF8-zH-jUF">
+            <objects>
+                <viewController id="efa-Lb-nBh" customClass="VC_About" customModule="KUKU_V1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OMJ-f8-NMq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xJP-FW-6Q9">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="About_Cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="About_Cell" rowHeight="82" id="QaB-Gi-L93" customClass="TableViewCell_About" customModule="KUKU_V1_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QaB-Gi-L93" id="9KF-v1-Hz5">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hyd-6S-fLh">
+                                                    <rect key="frame" x="15" y="5" width="71" height="65"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtitel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSS-UI-0G3">
+                                                    <rect key="frame" x="100" y="42" width="138" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGd-A1-71o">
+                                                    <rect key="frame" x="100" y="11" width="125" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageAbout" destination="Hyd-6S-fLh" id="aPN-nR-crK"/>
+                                            <outlet property="lblSubtitel" destination="dSS-UI-0G3" id="ysw-ii-oJB"/>
+                                            <outlet property="lblTitel" destination="lGd-A1-71o" id="DJW-Ob-Xxc"/>
+                                            <segue destination="Pe4-D4-tyg" kind="show" id="unF-z4-Pqk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xJP-FW-6Q9" firstAttribute="top" secondItem="FV0-rv-6Te" secondAttribute="top" id="04E-oh-z4X"/>
+                            <constraint firstItem="xJP-FW-6Q9" firstAttribute="trailing" secondItem="FV0-rv-6Te" secondAttribute="trailing" id="LBw-CA-TlZ"/>
+                            <constraint firstItem="xJP-FW-6Q9" firstAttribute="leading" secondItem="FV0-rv-6Te" secondAttribute="leading" id="O7n-RX-kVa"/>
+                            <constraint firstItem="xJP-FW-6Q9" firstAttribute="top" secondItem="FV0-rv-6Te" secondAttribute="top" id="c1E-S2-XxD"/>
+                            <constraint firstItem="xJP-FW-6Q9" firstAttribute="bottom" secondItem="FV0-rv-6Te" secondAttribute="bottom" id="qIh-9Q-c8c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FV0-rv-6Te"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nsb-mD-p5j"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="xJP-FW-6Q9" id="07u-th-GDh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFs-WG-Kdk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508.125" y="-1405.9859154929577"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Rsl-Kt-Sym">
+            <objects>
+                <viewController id="Pe4-D4-tyg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sXg-4o-98I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Poz-pd-H2I"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOu-q7-YZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1393" y="-1404"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="xdT-SB-BWp">
             <objects>
                 <viewController id="HHh-0t-YDW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1dv-Si-qXA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1251"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cUx-1Y-ITg">
-                                <rect key="frame" x="28" y="135" width="264" height="358"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NkR-2u-b7h">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1178"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5jM-1f-YwU">
-                                        <rect key="frame" x="0.0" y="0.0" width="264" height="358"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PrK-m4-eOL">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1252"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="playback" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5jM-1f-YwU">
+                                                <rect key="frame" x="0.0" y="74" width="320" height="1103"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">1. Wie funktioniert das Entsorgen mit KURZ?
+a) Wer kann Container bestellen?
+Unser Entsorgungsangebot wendet sich an Haushalte und Gewerbebetriebe.
+ Klassische Abfälle, die Haushalte über den KURZ Containerdienst entsorgen, sind Abfälle aus
+Renovierung, Bau und Gartengestaltung sowie Haushaltsauflösung und Entrümpelung.
+Bei Abfällen, die aus der laufenden Lebenshaltung stammen und nicht verwertet werden können, müssen Haushalte die sogenannte Überlassungspflicht an die öffentlich-rechtliche Müllabfuhr beachten. Für diese Abfälle muss die schwarze Restmülltonne verwendet werden.
+ Gewerbebetriebe können unseren Containerdienst im Rahmen der Gewerbeabfallverordnung
+uneingeschränkt nutzen. KURZ ist zertifizierter Entsorgungsfachbetrieb und steht für eine vorschriftsmäßige Entsorgung mit vollständiger Dokumentation.
+b) Wie funktioniert die Bestellung?
+Bestellen Sie bequem und rund um die Uhr im KURZ-Onlineshop. Mit wenigen Klicks werden Sie
+zum richtigen Angebot geführt:
+ Auswahl des gewünschten Containerstandorts durch Angabe der Postleitzahl
+ Auswahl des zu entsorgenden Abfalls
+ Auswahl des gewünschten Containers
+ Übersicht des Angebotes und verbindliche Bestellung
+Um im KURZ-Onlineshop zu bestellen, benötigen Sie ein Kundenkonto (Login). Wenn Sie noch kein
+Kundenkonto haben, können Sie dieses im Laufe des Bestellprozesses einfach anlegen.
+c) Ich benötige mehrere Container:
+Sie benötigen mehrere Behälter gleichzeitig, zum Beispiel für verschiedene Abfälle oder für eine
+große Baustelle? Bestellen Sie jeden Container einzeln für sich und geben jeweils die Terminwünsche an.
+Sie benötigen mehrere Container nacheinander, weil mehr Abfälle von derselben Sorte anfallen?
+Bestellen Sie den neuen Container bequem durch die Funktion "Bestellung wiederholen".
+d) Welche Abfallsorten gibt es und welche soll ich angeben?
+Der KURZ-Onlineshop hält Angebote für die häufigsten Abfallsorten, die standardmäßig über Container entsorgt werden, bereit.
+Beachten Sie: KURZ entsorgt für Sie jeden Abfall, auch wenn er im Onlineshop nicht zur Auswahl
+steht. Sprechen Sie uns an: Nutzen Sie das Kontaktformular oder wenden Sie sich an unseren Vertrieb. Telefonisch erreichen Sie uns unter 0800 5889642.</string>
+                                                <color key="textColor" red="0.2749724388" green="0.1140988544" blue="0.063025735319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">KUKU ist eine eingetragene Marke der KURZ Gruppe. Vetragspartner ist die Kurz Entsorgung GmbH mit Sitz in Ludwigsburg. Bei Fragen wenden sich an folgende E-Mail-Adresse info@kurz-entsorgung.de.  Die Bilder die mittels Augmented Reality (AR) erzeugt wurden dienen lediglich als Hinweis und eine Möglichkeite wie ein Container platziert werden kann. Es gibt aber keinerlei Anspruch auf die Position. Da diese von vielen weiteren Faktoren abhängig sein mag. Die Kurz Entsorgung GmbH behält sich vor den Auftrag zu stornieren bzw. an Subunternehmer weiterzugeben. Somit können die Aufträge von anderen Unternehmen ausgeführt werden. Ansprechpartner und Rechtspartner bleibt aber die Kurz Entsorgung GmbH.</string>
-                                        <color key="textColor" red="0.2749724388" green="0.1140988544" blue="0.063025735319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    </view>
                                 </subviews>
-                            </stackView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WGq-q2-QBI">
-                                <rect key="frame" x="20" y="17" width="280" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kuku_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Vxk-lG-ZD2">
-                                        <rect key="frame" x="20" y="20" width="240" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PrK-m4-eOL" firstAttribute="height" secondItem="1dv-Si-qXA" secondAttribute="height" id="EwY-Nn-wVA"/>
+                            <constraint firstItem="NkR-2u-b7h" firstAttribute="width" secondItem="1dv-Si-qXA" secondAttribute="width" id="WM2-Ey-bUK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Avq-id-mS5"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="QYk-Xe-KVn"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="1300"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jId-do-QJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-611" y="-587"/>
+            <point key="canvasLocation" x="2115" y="-772"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MAb-MF-AyV">
@@ -1354,7 +1472,7 @@
                         <segue destination="4qB-a8-Sbp" kind="relationship" relationship="viewControllers" id="JTR-li-qMm"/>
                         <segue destination="s8w-i6-4Wj" kind="relationship" relationship="viewControllers" id="ImC-LO-evF"/>
                         <segue destination="Ibh-K6-vpX" kind="relationship" relationship="viewControllers" id="7bR-Qx-UgZ"/>
-                        <segue destination="HHh-0t-YDW" kind="relationship" relationship="viewControllers" id="3lX-fk-09a"/>
+                        <segue destination="C5D-Ke-Fpi" kind="relationship" relationship="viewControllers" id="K5Y-tQ-8Gf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKa-B7-E3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2000,6 +2118,25 @@ Bestätigungsemail an:</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NzH-ur-WH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6296" y="1081"/>
+        </scene>
+        <!--Über-->
+        <scene sceneID="GH9-E8-OrD">
+            <objects>
+                <navigationController title="Über" automaticallyAdjustsScrollViewInsets="NO" id="C5D-Ke-Fpi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="sDj-al-UxD"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cd9-XR-kpZ">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="efa-Lb-nBh" kind="relationship" relationship="rootViewController" id="p8v-12-7QQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZkD-Mc-CJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-489.375" y="-1405.9859154929577"/>
         </scene>
     </scenes>
     <resources>
