@@ -17,7 +17,7 @@ class auftraegeVC: UIViewController {
     var hallo = "Hallo"
     
     @IBOutlet weak var table: UITableView!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,16 +26,18 @@ class auftraegeVC: UIViewController {
         table.dataSource = self     //as? UITableViewDataSource
         
         
-       // auftraege = Auftrag.getAuftraege()
-
+        // auftraege = Auftrag.getAuftraege()
+        
     }
-
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let dest = segue.destination as? auftragDetailVC, let cell = sender as? auftragsZelle, let indexPath = table.indexPath(for: cell) {
             
             dest.data = mydata[indexPath.row]
+            
+            //sdest.lblTitel.text =
             
         }
     }
@@ -57,36 +59,34 @@ extension auftraegeVC: UITableViewDataSource {
     
     // Zelle wird in der Detailansicht nun angezeigt
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    
-    
+        
+        
         // Prototypzelle erzeugen und als MyCell-Objekt verwenden
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProtoCell", for: indexPath) as! auftragsZelle
         
         
         let row = indexPath.row
-        cell.lblTitel.text = mydata[row].orderDate.description
-        cell.lblSubtitel.text = mydata[row].auftragsNr.description
+        cell.lblTitel.text = "Auftrag Nr.: \(mydata[row].auftragsNr.description)"
         
+        if mydata[row].kunde != nil {
+            
+            cell.lblSubtitel.text = "\(mydata[row].kunde!.vorname) \(mydata[row].kunde!.nachname)"
+            
+        }
+        
+        cell.imgContainer.image = UIImage.init(named: mydata[row].containerTyp.rawValue)
         
         return cell
-    
+        
     }
-    
-    
-    
-    
-    
 }
 
 
 extension auftraegeVC: UITableViewDelegate {
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(mydata[indexPath.row])
     }
-    
-    
     
 }
 

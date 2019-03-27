@@ -21,23 +21,29 @@ class auftragDetailVC: UIViewController {
     @IBOutlet weak var lblDatum: UILabel!
     @IBOutlet weak var lblStoff: UILabel!
     @IBOutlet weak var btnSaveChanges: UIButton!
+    @IBOutlet weak var lblKunde: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
+        lblTitel.text = "Auftragsnummer \(data.auftragsNr.description)"
+        lblDatum.text = data.deliverDate.description
+        lblStoff.text = data.stoff.rawValue
+        
+        imgContainer.image = UIImage(named: data.containerTyp.rawValue)
+        
+        if let cust = data.kunde {
+            
+            lblKunde.text = "Kunde: \(cust.getVorname()) \(cust.getNachname())"
+        }
+        
+        
+    
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

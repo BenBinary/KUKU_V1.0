@@ -35,27 +35,27 @@ class PopupContainerViewController: PopupViewController {
         
         
         if (sender.title(for: .normal) == "20") {
-            ContainerSet = ContainerTyp.ABR_20
+            ContainerSet = ContainerTyp.ABR_20QM
         } else if (sender.title(for: .normal) == "40") {
-            ContainerSet = ContainerTyp.ABR_40
+            ContainerSet = ContainerTyp.ABR_40QM
         } else if (slidDeckel.isOn == true) {
             
             if (sender.title(for: .normal) == "5") {
-                ContainerSet = ContainerTyp.ABS_5_DECKEL
+                ContainerSet = ContainerTyp.ABS_5QM_DECKEL
             } else if (sender.title(for: .normal) == "7") {
-                ContainerSet = ContainerTyp.ABS_7_DECKEL
+                ContainerSet = ContainerTyp.ABS_7QM_DECKEL
             } else if (sender.title(for: .normal) == "10") {
-                ContainerSet = ContainerTyp.ABS_10_DECKEL
+                ContainerSet = ContainerTyp.ABS_10QM_DECKEL
             }
             
         } else if (slidDeckel.isOn == false) {
             
             if (sender.title(for: .normal) == "5") {
-                ContainerSet = ContainerTyp.ABS_5_OFFEN
+                ContainerSet = ContainerTyp.ABS_5QM_OFFEN
             } else if (sender.title(for: .normal) == "7") {
-                ContainerSet = ContainerTyp.ABS_7_OFFEN
+                ContainerSet = ContainerTyp.ABS_7QM_OFFEN
             } else if (sender.title(for: .normal) == "10") {
-                ContainerSet = ContainerTyp.ABS_10_OFFEN
+                ContainerSet = ContainerTyp.ABS_10QM_OFFEN
             }
         }
     }

@@ -7,9 +7,9 @@
 //
 
 import Foundation
+import MapKit
 
-
-struct Auftrag : Codable {
+struct Auftrag: Codable {
     
     
     /*
@@ -34,6 +34,7 @@ struct Auftrag : Codable {
     lazy var vat = 0.0
     lazy var status = 0
     var container : Container
+    var containerTyp : ContainerTyp
     lazy var stoff = Stoffe.Sperrmuell
     var strasse = ""
     var hausnr = 0
@@ -71,6 +72,8 @@ struct Auftrag : Codable {
         pickupDate = Date()
         container = Container()
         typ = Auftragstyp.Anlieferung
+        
+        containerTyp = ContainerTyp.ABS_10QM_OFFEN
     }
     
     
@@ -167,7 +170,7 @@ struct Auftrag : Codable {
         pickupDate = Date()
         container = Container()
         typ = Auftragstyp.Anlieferung
-        
+        containerTyp = ContainerTyp.ABS_10QM_OFFEN
         
     }
     
@@ -196,6 +199,7 @@ struct Auftrag : Codable {
         
         typ = Auftragstyp.Anlieferung
         container = Container()
+        containerTyp = ContainerTyp.ABS_10QM_OFFEN
         price = 0.0
     }
     
@@ -224,9 +228,9 @@ struct Auftrag : Codable {
         self.paypal = paypal
         self.lastschrift = lastschrift
         
-        
         typ = Auftragstyp.Anlieferung
         container = Container()
+        containerTyp = ContainerTyp.ABS_10QM_OFFEN
         price = 0.0
     }
     
@@ -256,10 +260,11 @@ struct Auftrag : Codable {
         self.lat = lat
         self.long = long
         
-        
+        containerTyp = ContainerTyp.ABS_5QM_OFFEN
         typ = Auftragstyp.Anlieferung
         container = Container()
         price = 0.0
+        
     }
     
     func setContainer(for : Container) {
@@ -285,6 +290,11 @@ struct Auftrag : Codable {
         var auftraege  = Array<Auftrag>()
         
         auftraege.append(Auftrag(kunde: Kunde(vorname: "Monika", nachname: "Heilmann"), datum: Date(), payed: false, delivered: false))
+        
+        auftraege.append(Auftrag(kunde: Kunde(vorname: "Stefanie", nachname: "Bach"), datum: Date(), payed: false, delivered: false, deliverdate: Date(), pickupdate: Date(), strasse: "Bachstr", hausnr: 1, adresszusatz: "", plz: 11111, stadt: "Backnang", paypal: false, lastschrift: true, lat: 49.52135, long: 7.351872))
+        
+        auftraege.append(Auftrag(kunde: Kunde(vorname: "Ursula", nachname: "Donis"), datum: Date(), payed: false, delivered: false, deliverdate: Date(), pickupdate: Date(), strasse: "Donistr", hausnr: 1, adresszusatz: "", plz: 48981, stadt: "Ludwigsburg-Poppenweiler", paypal: false, lastschrift: true, lat: 16.16868, long: 49.135182))
+        
         auftraege.append(Auftrag(kunde: Kunde(vorname: "Phlipp", nachname: "Westhauser"), datum: Date(), payed: false, delivered: false))
         auftraege.append(Auftrag(kunde: Kunde(vorname: "Fernanda", nachname: "Beck"), datum: Date(), payed: false, delivered: false))
         
@@ -298,12 +308,20 @@ struct Auftrag : Codable {
     
     // Description-Methode
     public var description: String {
-        
-        
+      
         return "\(auftragsNr) \(strasse) \(hausnr)"
         
     }
     
+    static func saveAuftraege() {
+        
+    }
+    
+    static func readAuftraege() {
+    
+        
+        
+    }
     
     // Persistente Datenspeicherung mit JSON
     static func saveAuftrag(_ data: Auftrag) {
@@ -347,8 +365,6 @@ struct Auftrag : Codable {
         
         return Auftrag()
     }
-    
-    
     
     
     static func getDocumentsDirectory() -> URL {
