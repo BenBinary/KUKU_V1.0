@@ -56,6 +56,8 @@
 		CDB10853224BB7E300ED6F25 /* TableVC_About.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB10852224BB7E300ED6F25 /* TableVC_About.swift */; };
 		CDB10855224BB9D100ED6F25 /* TableViewCell_About.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB10854224BB9D100ED6F25 /* TableViewCell_About.swift */; };
 		CDB10857224BC18600ED6F25 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB10856224BC18600ED6F25 /* About.swift */; };
+		CDB1085B224BD33600ED6F25 /* AboutDaten.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDB10859224BD33600ED6F25 /* AboutDaten.xcdatamodeld */; };
+		CDB1085D224BD44D00ED6F25 /* AboutDaten.json in Resources */ = {isa = PBXBuildFile; fileRef = CDB1085C224BD44D00ED6F25 /* AboutDaten.json */; };
 		CDC8C94F223678CF00F67381 /* VC_Lastschrift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C94E223678CF00F67381 /* VC_Lastschrift.swift */; };
 		CDC8C95122368A9F00F67381 /* VC_Kreditkarte.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */; };
 		CDC8C9532236910900F67381 /* VC_VISA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C9522236910900F67381 /* VC_VISA.swift */; };
@@ -142,6 +144,9 @@
 		CDB10852224BB7E300ED6F25 /* TableVC_About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC_About.swift; sourceTree = "<group>"; };
 		CDB10854224BB9D100ED6F25 /* TableViewCell_About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell_About.swift; sourceTree = "<group>"; };
 		CDB10856224BC18600ED6F25 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		CDB10858224BD2F800ED6F25 /* geojson .geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = "geojson .geojson"; sourceTree = "<group>"; };
+		CDB1085A224BD33600ED6F25 /* AboutDaten.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AboutDaten.xcdatamodel; sourceTree = "<group>"; };
+		CDB1085C224BD44D00ED6F25 /* AboutDaten.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AboutDaten.json; sourceTree = "<group>"; };
 		CDC8C94E223678CF00F67381 /* VC_Lastschrift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Lastschrift.swift; sourceTree = "<group>"; };
 		CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Kreditkarte.swift; sourceTree = "<group>"; };
 		CDC8C9522236910900F67381 /* VC_VISA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_VISA.swift; sourceTree = "<group>"; };
@@ -339,6 +344,9 @@
 				CDB10852224BB7E300ED6F25 /* TableVC_About.swift */,
 				CDB10854224BB9D100ED6F25 /* TableViewCell_About.swift */,
 				CDB10856224BC18600ED6F25 /* About.swift */,
+				CDB10858224BD2F800ED6F25 /* geojson .geojson */,
+				CDB10859224BD33600ED6F25 /* AboutDaten.xcdatamodeld */,
+				CDB1085C224BD44D00ED6F25 /* AboutDaten.json */,
 			);
 			name = About;
 			path = "New Group";
@@ -502,6 +510,7 @@
 				CD04AA4A2181B2FD00D019FC /* Assets.xcassets in Resources */,
 				CD04AA482181B2FC00D019FC /* Main.storyboard in Resources */,
 				CDDC87332239464B0026D741 /* stoffAuswahl.xib in Resources */,
+				CDB1085D224BD44D00ED6F25 /* AboutDaten.json in Resources */,
 				CD04AA732181C17400D019FC /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,6 +619,7 @@
 				CD2D747222298FB100E014E8 /* auftraegeVC.swift in Sources */,
 				CDB10857224BC18600ED6F25 /* About.swift in Sources */,
 				CD1D795621F06A7300B44646 /* PopupContainerViewController.swift in Sources */,
+				CDB1085B224BD33600ED6F25 /* AboutDaten.xcdatamodeld in Sources */,
 				CD04AA412181B2FC00D019FC /* RootViewController.swift in Sources */,
 				CD1D795E21F12E3B00B44646 /* Kunde.swift in Sources */,
 				CD0CCD222237EBE3004BD246 /* VC_AuftragNeu_02_Stand.swift in Sources */,
@@ -989,6 +999,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CDB10859224BD33600ED6F25 /* AboutDaten.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CDB1085A224BD33600ED6F25 /* AboutDaten.xcdatamodel */,
+			);
+			currentVersion = CDB1085A224BD33600ED6F25 /* AboutDaten.xcdatamodel */;
+			path = AboutDaten.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CD04AA332181B2FC00D019FC /* Project object */;
 }
