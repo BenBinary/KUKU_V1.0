@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VC_About: UIViewController {
+class VC_About_1: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -56,6 +56,19 @@ class VC_About: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        
 
+        
+        
+        if segue.destination is VC_About_2 {
+            
+            let dest = segue.destination as! VC_About_2
+            
+            
+            //dest.menusubitems = menu?[0].menusubitems
+            
+            
+        }
+        
+        
     }
  
 
@@ -63,7 +76,7 @@ class VC_About: UIViewController {
 
 
 // Datenquelle für die TableView
-extension VC_About: UITableViewDataSource {
+extension VC_About_1: UITableViewDataSource {
     
     // Anzahl von Rows / Reihen / Zeilen
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -84,8 +97,7 @@ extension VC_About: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         var cell = tableView.dequeueReusableCell(withIdentifier: "About_Cell") as! TableViewCell_About
-       
-        
+
         var row = indexPath.row
         print(row)
         
@@ -100,7 +112,7 @@ extension VC_About: UITableViewDataSource {
 }
 
 
-extension VC_About: UITableViewDelegate {
+extension VC_About_1: UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

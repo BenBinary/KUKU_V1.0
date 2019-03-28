@@ -18,8 +18,15 @@ struct Menu: Codable {
     }
 }
 
-
+// Erste Ebene im Verzeichnis
 struct MenuItems: Codable {
     var Title:String
     var Subtitle:String
+    var menusubitems:[MenuSubItem]
+}
+
+// Zweite Ebene im Verzeichnis
+struct MenuSubItem: Codable {
+    var Title:String
+  //   var Subtitle:String
 }

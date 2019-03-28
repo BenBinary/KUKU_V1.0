@@ -1303,10 +1303,10 @@
             </objects>
             <point key="canvasLocation" x="-2261.25" y="-921.12676056338034"/>
         </scene>
-        <!--About-->
+        <!--About1-->
         <scene sceneID="BF8-zH-jUF">
             <objects>
-                <viewController id="efa-Lb-nBh" customClass="VC_About" customModule="KUKU_V1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="efa-Lb-nBh" customClass="VC_About_1" customModule="KUKU_V1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OMJ-f8-NMq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1372,10 +1372,10 @@
             </objects>
             <point key="canvasLocation" x="508.125" y="-1405.9859154929577"/>
         </scene>
-        <!--View Controller-->
+        <!--About2-->
         <scene sceneID="Rsl-Kt-Sym">
             <objects>
-                <viewController id="Pe4-D4-tyg" sceneMemberID="viewController">
+                <viewController id="Pe4-D4-tyg" customClass="VC_About_2" customModule="KUKU_V1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sXg-4o-98I">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1383,9 +1383,40 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yfH-nL-6Nx">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="About_Cell_2" rowHeight="82" id="lka-Ld-yTj" customClass="TableViewCell_About_2" customModule="KUKU_V1_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="About_Cell_2" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lka-Ld-yTj" id="U3t-rh-6PQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtitel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zi-cd-Pd5">
+                                                    <rect key="frame" x="97" y="44" width="59" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysF-di-G2m">
+                                                    <rect key="frame" x="97" y="11" width="51" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblSubtitel" destination="1Zi-cd-Pd5" id="URU-Q7-d0N"/>
+                                            <outlet property="lblTitel" destination="ysF-di-G2m" id="Q5n-hj-FlG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" label="blub"/>
                         <constraints>
                             <constraint firstItem="yfH-nL-6Nx" firstAttribute="top" secondItem="Poz-pd-H2I" secondAttribute="top" id="Oz3-da-rbP"/>
                             <constraint firstItem="yfH-nL-6Nx" firstAttribute="leading" secondItem="Poz-pd-H2I" secondAttribute="leading" id="VYM-79-Vw6"/>
@@ -1394,10 +1425,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Poz-pd-H2I"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="yfH-nL-6Nx" id="sgG-Qd-7Va"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOu-q7-YZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1391.25" y="-1404.9295774647887"/>
+            <point key="canvasLocation" x="1573" y="-1405"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xdT-SB-BWp">
@@ -1467,7 +1501,7 @@ steht. Sprechen Sie uns an: Nutzen Sie das Kontaktformular oder wenden Sie sich 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jId-do-QJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2115" y="-772"/>
+            <point key="canvasLocation" x="2286" y="-1018"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MAb-MF-AyV">
