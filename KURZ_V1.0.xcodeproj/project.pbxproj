@@ -28,6 +28,8 @@
 		CD0CCD2A2237FF6C004BD246 /* PVC_AuftragNeu_ZSM_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CCD292237FF6C004BD246 /* PVC_AuftragNeu_ZSM_1.swift */; };
 		CD101A3121DECC5A004C81B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD101A3021DECC5A004C81B0 /* ViewController.swift */; };
 		CD1050F3223A7DA000AFD91F /* ContainerTyp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1050F2223A7DA000AFD91F /* ContainerTyp.swift */; };
+		CD10E29D224D0C48001EC783 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10E29C224D0C48001EC783 /* Menu.swift */; };
+		CD10E29F224D12D0001EC783 /* VC_About_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10E29E224D12D0001EC783 /* VC_About_2.swift */; };
 		CD16CC46224B73EB00618F8B /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD16CC45224B73EB00618F8B /* Status.swift */; };
 		CD16CC84224B851800618F8B /* ContainerArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD16CC83224B851800618F8B /* ContainerArtwork.swift */; };
 		CD1B4F802243759100D5E71F /* VC_AuftragNeu_ZSM_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1B4F7F2243759100D5E71F /* VC_AuftragNeu_ZSM_2.swift */; };
@@ -56,7 +58,6 @@
 		CDB10853224BB7E300ED6F25 /* TableVC_About.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB10852224BB7E300ED6F25 /* TableVC_About.swift */; };
 		CDB10855224BB9D100ED6F25 /* TableViewCell_About.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB10854224BB9D100ED6F25 /* TableViewCell_About.swift */; };
 		CDB10857224BC18600ED6F25 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB10856224BC18600ED6F25 /* About.swift */; };
-		CDB1085B224BD33600ED6F25 /* AboutDaten.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDB10859224BD33600ED6F25 /* AboutDaten.xcdatamodeld */; };
 		CDB1085D224BD44D00ED6F25 /* AboutDaten.json in Resources */ = {isa = PBXBuildFile; fileRef = CDB1085C224BD44D00ED6F25 /* AboutDaten.json */; };
 		CDC8C94F223678CF00F67381 /* VC_Lastschrift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C94E223678CF00F67381 /* VC_Lastschrift.swift */; };
 		CDC8C95122368A9F00F67381 /* VC_Kreditkarte.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */; };
@@ -116,6 +117,8 @@
 		CD0CCD292237FF6C004BD246 /* PVC_AuftragNeu_ZSM_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVC_AuftragNeu_ZSM_1.swift; sourceTree = "<group>"; };
 		CD101A3021DECC5A004C81B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD1050F2223A7DA000AFD91F /* ContainerTyp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerTyp.swift; sourceTree = "<group>"; };
+		CD10E29C224D0C48001EC783 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		CD10E29E224D12D0001EC783 /* VC_About_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_About_2.swift; sourceTree = "<group>"; };
 		CD16CC45224B73EB00618F8B /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		CD16CC83224B851800618F8B /* ContainerArtwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerArtwork.swift; sourceTree = "<group>"; };
 		CD1B4F7F2243759100D5E71F /* VC_AuftragNeu_ZSM_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_AuftragNeu_ZSM_2.swift; sourceTree = "<group>"; };
@@ -145,7 +148,6 @@
 		CDB10854224BB9D100ED6F25 /* TableViewCell_About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell_About.swift; sourceTree = "<group>"; };
 		CDB10856224BC18600ED6F25 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		CDB10858224BD2F800ED6F25 /* geojson .geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = "geojson .geojson"; sourceTree = "<group>"; };
-		CDB1085A224BD33600ED6F25 /* AboutDaten.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AboutDaten.xcdatamodel; sourceTree = "<group>"; };
 		CDB1085C224BD44D00ED6F25 /* AboutDaten.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AboutDaten.json; sourceTree = "<group>"; };
 		CDC8C94E223678CF00F67381 /* VC_Lastschrift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Lastschrift.swift; sourceTree = "<group>"; };
 		CDC8C95022368A9F00F67381 /* VC_Kreditkarte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Kreditkarte.swift; sourceTree = "<group>"; };
@@ -345,8 +347,9 @@
 				CDB10854224BB9D100ED6F25 /* TableViewCell_About.swift */,
 				CDB10856224BC18600ED6F25 /* About.swift */,
 				CDB10858224BD2F800ED6F25 /* geojson .geojson */,
-				CDB10859224BD33600ED6F25 /* AboutDaten.xcdatamodeld */,
 				CDB1085C224BD44D00ED6F25 /* AboutDaten.json */,
+				CD10E29C224D0C48001EC783 /* Menu.swift */,
+				CD10E29E224D12D0001EC783 /* VC_About_2.swift */,
 			);
 			name = About;
 			path = "New Group";
@@ -615,11 +618,11 @@
 			files = (
 				CDDC87352239471D0026D741 /* stoffAuswahl.swift in Sources */,
 				CD1D795421F052FE00B44646 /* PopupWasteViewController.swift in Sources */,
+				CD10E29F224D12D0001EC783 /* VC_About_2.swift in Sources */,
 				CD1050F3223A7DA000AFD91F /* ContainerTyp.swift in Sources */,
 				CD2D747222298FB100E014E8 /* auftraegeVC.swift in Sources */,
 				CDB10857224BC18600ED6F25 /* About.swift in Sources */,
 				CD1D795621F06A7300B44646 /* PopupContainerViewController.swift in Sources */,
-				CDB1085B224BD33600ED6F25 /* AboutDaten.xcdatamodeld in Sources */,
 				CD04AA412181B2FC00D019FC /* RootViewController.swift in Sources */,
 				CD1D795E21F12E3B00B44646 /* Kunde.swift in Sources */,
 				CD0CCD222237EBE3004BD246 /* VC_AuftragNeu_02_Stand.swift in Sources */,
@@ -637,6 +640,7 @@
 				CD16CC46224B73EB00618F8B /* Status.swift in Sources */,
 				CD2DF07222366C0100C4FBC6 /* VC_PayPal.swift in Sources */,
 				CD0CCD242237F130004BD246 /* Stoffe.swift in Sources */,
+				CD10E29D224D0C48001EC783 /* Menu.swift in Sources */,
 				CDC8C9532236910900F67381 /* VC_VISA.swift in Sources */,
 				CD0CCD2A2237FF6C004BD246 /* PVC_AuftragNeu_ZSM_1.swift in Sources */,
 				CD22660922423EE000853DF7 /* VIEW_Bezahlmethode.swift in Sources */,
@@ -999,19 +1003,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		CDB10859224BD33600ED6F25 /* AboutDaten.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CDB1085A224BD33600ED6F25 /* AboutDaten.xcdatamodel */,
-			);
-			currentVersion = CDB1085A224BD33600ED6F25 /* AboutDaten.xcdatamodel */;
-			path = AboutDaten.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = CD04AA332181B2FC00D019FC /* Project object */;
 }

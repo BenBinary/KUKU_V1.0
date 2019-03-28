@@ -13,12 +13,39 @@ class VC_About: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var mydata = [[String]]()
+    var menu = [MenuItems]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.dataSource = self
         tableView.delegate = self
+        
+        
+        var decoder = JSONDecoder()
+        
+        if let url = Bundle.main.url(forResource: "AboutDaten", withExtension: "json"){
+        
+            if let data = try? Data(contentsOf: url) {
+                
+                if let jsonData = try? decoder.decode(Menu.self, from: data) {
+                    
+                    
+                    print(jsonData.menu[0].Title)
+                    print(jsonData.menu[1].Title)
+                    
+                    self.menu = jsonData.menu
+                    
+                    print(self.menu[0].Title)
+                    print(self.menu[2].Title)
+                    
+                } else { print("keine Dekodierung") }
+                
+                
+            } else { print("keine Daten")}
+            
+            
+        } else { print("keine URL")}
         
         
         
@@ -42,7 +69,7 @@ extension VC_About: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         // Hier noch die Anzahl --> dynamisch einbetten
-        return 2
+        return menu.count
         
     }
     
@@ -59,9 +86,12 @@ extension VC_About: UITableViewDataSource {
         var cell = tableView.dequeueReusableCell(withIdentifier: "About_Cell") as! TableViewCell_About
        
         
+        var row = indexPath.row
+        print(row)
         
-        cell.lblTitel.text = "Hallo"
-        cell.lblSubtitel.text = "Tschüss"
+        
+        cell.lblTitel.text = menu[row ?? 0].Title
+        cell.lblSubtitel.text = menu[row ?? 0].Subtitle
         
         return cell
         
