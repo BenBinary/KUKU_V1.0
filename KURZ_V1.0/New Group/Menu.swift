@@ -28,5 +28,7 @@ struct MenuItems: Codable {
 // Zweite Ebene im Verzeichnis
 struct MenuSubItem: Codable {
     var Title:String
-  //   var Subtitle:String
+    var Subtitle:String
+    var Text:String
+    
 }

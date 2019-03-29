@@ -62,8 +62,12 @@ class VC_About_1: UIViewController {
             
             let dest = segue.destination as! VC_About_2
             
+            var row = tableView.indexPathForSelectedRow?.row
             
-            //dest.menusubitems = menu?[0].menusubitems
+            print("Ausgwählte Zelle \(row)")
+            
+            
+            dest.menusubitems = menu[row ?? 0].menusubitems
             
             
         }
@@ -117,7 +121,7 @@ extension VC_About_1: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print(indexPath)
+       //print(indexPath)
         
     }
 }

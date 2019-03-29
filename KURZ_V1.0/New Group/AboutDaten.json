@@ -4,12 +4,12 @@
             
             "menusubitems":
             [
-            {"Title":"Wer kann Container bestellen?"},
-            {"Title":"Wie funktioniert die Bestellung?"},
-            {"Title":"Ich benötige mehrere Container"},
-            {"Title":"Welche Abfallsorten gibt es und welche soll ich angeben?"},
-            {"Title":"Welche Container gibt es und welche sind die richtigen für mich?"},
-            {"Title":"Was bedeutet AVV?"}
+                {"Title":"Wer kann Container bestellen?", "Subtitle":"", "Text":"Unser Entsorgungsangebot wendet sich an Haushalte und Gewerbebetriebe"},
+                {"Title":"Wie funktioniert die Bestellung?", "Subtitle":"", "Text":"Bestellen Sie bequem und rund um die Uhr im KURZ-Onlineshop. Mit wenigen Klicks werden Sie zum richtigen Angebot geführt"},
+            {"Title":"Ich benötige mehrere Container", "Subtitle":"", "Text":"Sie benötigen mehrere Behälter gleichzeitig, zum Beispiel für verschiedene Abfälle oder für eine große Baustelle?"},
+            {"Title":"Welche Abfallsorten gibt es und welche soll ich angeben?", "Subtitle":"", "Text":""},
+            {"Title":"Welche Container gibt es und welche sind die richtigen für mich?", "Subtitle":"", "Text":""},
+            {"Title":"Was bedeutet AVV?", "Subtitle":"", "Text":""}
             ]},
         
     { "Title":"Abrechnung und Bezahlung",                       "Subtitle":"Preise und Zahlungsmethoden",
@@ -17,40 +17,48 @@
     
         "menusubitems":
         [
-             {"Title":"Wer kann Container bestellen?"}
+             {"Title":"Zusammensetzung der Preis", "Subtitle":"", "Text":""},
+             {"Title":"Sonstige Kosten", "Subtitle":"", "Text":""},
+             {"Title":"Vorkasse, Rechnung", "Subtitle":"", "Text":""}
+             
         ]},
     
-    { "Title":"Bei der Bestellung",                             "Subtitle":"Was muss ich beachten?",
+    { "Title":"Vor der Bestellung",                             "Subtitle":"Was muss ich beachten?",
         
         "menusubitems":
         [
-             {"Title":"Wer kann Container bestellen?"}
+             {"Title":"Gute Planung - Gutes Projekt", "Subtitle":"", "Text":""},
+             {"Title":"Stellplatzgenehmigung", "Subtitle":"Unbeding beachten", "Text":""}
         ]},
     
     { "Title":"Nach der Bestellung",                            "Subtitle":"Ablauf und Termine" ,
         
         "menusubitems":
         [
-             {"Title":"Wer kann Container bestellen?"}
+             {"Title":"Ablauf des Entsorgungsauftrags", "Subtitle":"", "Text":"" },
+             {"Title":"Termine", "Subtitle":"", "Text":"" },
+             {"Title":"Freie Zufahrt", "Subtitle":"unbedingt beachten", "Text":"" },
+             {"Title":"Informieren Sie andere", "Subtitle":"sehr empfehlenswert", "Text":"" },
+             {"Title":"Beladen der Container", "Subtitle":"", "Text":"" }
         ]},
     { "Title":"Haftungsausschluss",                             "Subtitle":"Wie funktioniert das?" ,
         
         "menusubitems":
         [
-             {"Title":"Wer kann Container bestellen?"}
+             {"Title":"", "Subtitle":"", "Text":""}
         ]},
     { "Title":"Über KURZ",                                      "Subtitle":"Eine KURZgeschichte",
         
         "menusubitems":
         [
-             {"Title":"Wer kann Container bestellen?"}
+             {"Title":"", "Subtitle":"", "Text":""}
         ]},
     
     { "Title":"Support",                                      "Subtitle":"Bei Fragen Lob oder Kritik",
         
         "menusubitems":
         [
-             {"Title":"Wer kann Container bestellen?"}
+             {"Title":"", "Subtitle":"", "Text":""}
         ]}
     ]
 }

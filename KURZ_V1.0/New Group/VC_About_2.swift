@@ -19,7 +19,11 @@ class VC_About_2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        
+        
        //menusubitems = [MenuSubItem]()
     }
     
@@ -27,8 +31,17 @@ class VC_About_2: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+ 
+        
+        var row = tableView.indexPathForSelectedRow?.row
+        
+        if (segue.destination is VC_About_3) {
+        
+            var dest = segue.destination as? VC_About_3
+            dest?.text = menusubitems[row ?? 0].Text
+        }
+        
+        
     }
  
 
@@ -46,13 +59,12 @@ extension VC_About_2: UITableViewDataSource {
         
         var cell = tableView.dequeueReusableCell(withIdentifier: "About_Cell_2") as! TableViewCell_About_2
         
-        var row = indexPath.row
+        let row = indexPath.row
         
         
         cell.lblTitel.text = menusubitems[row].Title
-        
+        cell.lblSubtitel.text = menusubitems[row].Subtitle
         return cell
-        
         
         
     }
