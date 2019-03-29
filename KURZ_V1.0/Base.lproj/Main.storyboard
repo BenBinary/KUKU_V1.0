@@ -700,15 +700,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LKb-Gx-9s9">
-                                <rect key="frame" x="22" y="93" width="282" height="411"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LKb-Gx-9s9">
+                                <rect key="frame" x="10" y="74" width="300" height="435"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ProtoCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProtoCell" rowHeight="80" id="gh6-eZ-DtE" customClass="auftragsZelle" customModule="KUKU_V1_0" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="282" height="80"/>
+                                        <rect key="frame" x="0.0" y="28" width="300" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gh6-eZ-DtE" id="IaT-KG-CeW">
-                                            <rect key="frame" x="0.0" y="0.0" width="249" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="267" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tYy-rL-mbm">
@@ -745,20 +745,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Aufträge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErH-PA-PB0">
-                                <rect key="frame" x="22" y="64" width="282" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.80417478239999995" green="0.43417733860000002" blue="0.04650801056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="ErH-PA-PB0" firstAttribute="top" secondItem="Pbf-ZV-EpV" secondAttribute="top" constant="1" id="B7d-2m-muk"/>
-                            <constraint firstItem="LKb-Gx-9s9" firstAttribute="leading" secondItem="Pbf-ZV-EpV" secondAttribute="leading" constant="22" id="KmE-zz-8g5"/>
-                            <constraint firstItem="Pbf-ZV-EpV" firstAttribute="bottom" secondItem="LKb-Gx-9s9" secondAttribute="bottom" constant="14" id="h95-vH-Kb1"/>
-                            <constraint firstItem="Pbf-ZV-EpV" firstAttribute="trailing" secondItem="LKb-Gx-9s9" secondAttribute="trailing" constant="16" id="lvp-9p-jON"/>
-                            <constraint firstItem="LKb-Gx-9s9" firstAttribute="top" secondItem="ErH-PA-PB0" secondAttribute="bottom" constant="8" id="xdX-Cp-Qan"/>
+                            <constraint firstItem="Pbf-ZV-EpV" firstAttribute="bottom" secondItem="LKb-Gx-9s9" secondAttribute="bottom" constant="10" id="UGv-Vs-xQX"/>
+                            <constraint firstItem="LKb-Gx-9s9" firstAttribute="leading" secondItem="Pbf-ZV-EpV" secondAttribute="leading" constant="10" id="iqJ-at-sk4"/>
+                            <constraint firstItem="LKb-Gx-9s9" firstAttribute="top" secondItem="Pbf-ZV-EpV" secondAttribute="top" constant="10" id="kXi-SX-VIC"/>
+                            <constraint firstItem="Pbf-ZV-EpV" firstAttribute="trailing" secondItem="LKb-Gx-9s9" secondAttribute="trailing" constant="10" id="mQk-HV-kqL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pbf-ZV-EpV"/>
                     </view>
@@ -1217,8 +1210,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMc-7I-LYW">
-                                <rect key="frame" x="16" y="45" width="245" height="94"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMc-7I-LYW">
+                                <rect key="frame" x="39" y="45" width="222" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="btnPayPal:" destination="Ibh-K6-vpX" eventType="touchUpInside" id="kSN-SP-YNy"/>
@@ -1227,24 +1221,12 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PayPal" translatesAutoresizingMaskIntoConstraints="NO" id="ajY-G3-XnW">
-                                <rect key="frame" x="26" y="51" width="104" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FCu-50-Xkk">
                                 <rect key="frame" x="100" y="166" width="98" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Lastschrift">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="16" name=".SFNSText"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
                                 </state>
                                 <connections>
                                     <segue destination="auI-Jn-hS4" kind="popoverPresentation" popoverAnchorView="FCu-50-Xkk" id="N4d-sQ-uch">
@@ -1266,8 +1248,9 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PayPal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1l-OF-azP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PayPal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1l-OF-azP">
                                 <rect key="frame" x="175" y="75" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.2749724388" green="0.1140988544" blue="0.063025735319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1282,16 +1265,15 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lastschrift" translatesAutoresizingMaskIntoConstraints="NO" id="Vwl-M0-hZc">
-                                <rect key="frame" x="110" y="173" width="81" height="76"/>
+                                <rect key="frame" x="110" y="173" width="71" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PayPal" translatesAutoresizingMaskIntoConstraints="NO" id="ajY-G3-XnW">
+                                <rect key="frame" x="63" y="50" width="104" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.80417478239999995" green="0.43417733860000002" blue="0.04650801056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="DMc-7I-LYW" firstAttribute="top" secondItem="O1l-OF-azP" secondAttribute="bottom" constant="-60" id="0jb-0h-TDM"/>
-                            <constraint firstItem="O1l-OF-azP" firstAttribute="leading" secondItem="DMc-7I-LYW" secondAttribute="leading" id="JIn-iG-U4q"/>
-                            <constraint firstItem="O1l-OF-azP" firstAttribute="leading" secondItem="DMc-7I-LYW" secondAttribute="trailing" constant="-123" id="szG-Do-lfP"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zu6-UP-W5P"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="bookmarks" id="6dc-Bx-Ixu"/>

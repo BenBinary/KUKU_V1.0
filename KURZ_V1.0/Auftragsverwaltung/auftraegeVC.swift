@@ -27,6 +27,7 @@ class auftraegeVC: UIViewController {
         
         
         // auftraege = Auftrag.getAuftraege()
+        self.title = "Auftragsübersicht"
         
     }
     

@@ -20,8 +20,8 @@ class VC_Bezahlung: UIViewController, UIPopoverPresentationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewLastschrift.isHidden = true
-        viewPayPal.isHidden = false
+        //viewLastschrift.isHidden = true
+        //viewPayPal.isHidden = false
         
         //btnPayPal.contentMode = .scaleAspectFit
         //btnLastschrift.contentMode = .scaleAspectFit
