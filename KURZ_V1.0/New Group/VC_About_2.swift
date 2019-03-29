@@ -39,6 +39,10 @@ class VC_About_2: UIViewController {
         
             var dest = segue.destination as? VC_About_3
             dest?.text = menusubitems[row ?? 0].Text
+            dest?.title = menusubitems[row ?? 0].Title
+            let backItem = UIBarButtonItem()
+            backItem.title = menusubitems[row ?? 0].Title
+            dest?.navigationItem.backBarButtonItem = backItem
         }
         
         

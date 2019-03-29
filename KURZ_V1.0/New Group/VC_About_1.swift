@@ -22,8 +22,11 @@ class VC_About_1: UIViewController {
         tableView.delegate = self
         
         
-        var decoder = JSONDecoder()
+        // Titel
+       self.title = "About"
         
+        // Daten lesen
+        var decoder = JSONDecoder()
         if let url = Bundle.main.url(forResource: "AboutDaten", withExtension: "json"){
         
             if let data = try? Data(contentsOf: url) {
@@ -68,6 +71,10 @@ class VC_About_1: UIViewController {
             
             
             dest.menusubitems = menu[row ?? 0].menusubitems
+            
+            
+            
+            dest.title = menu[row ?? 0].Title
             
             
         }
